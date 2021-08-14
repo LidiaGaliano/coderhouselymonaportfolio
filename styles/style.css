@@ -61,12 +61,9 @@ body {
   height: 10rem;
 }
 
-/*texto footer*/
-.diseñoFotter h4 {
-  padding: 2rem;
-  color: #000000;
-  font-size: 200%;
-  font-weight: 400;
+.diseñoFotter img {
+  width: 4rem;
+  height: 4rem;
 }
 
 /*iconos de rrss*/
