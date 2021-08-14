@@ -1,0 +1,337 @@
+/*Reseteo*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*unidad de medida responsive*/
+html {
+  font-size: 62.5%;
+}
+
+/*estilos texto*/
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 500%;
+  line-height: 5rem;
+  padding: 3rem;
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 300%;
+  line-height: 7rem;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  line-height: 3rem;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  line-height: 3rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  line-height: 3rem;
+  text-align: left;
+}
+
+/*estilo decorativo de todas las listas*/
+li {
+  list-style-type: none;
+}
+
+/*Body color del texto*/
+body {
+  color: #ffbb00;
+}
+
+/*CSS FOOTER*/
+/*diseño footer*/
+.diseñoFotter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #ffbb00;*/
+  height: 10rem;
+  width: 100%;
+}
+
+/*texto footer*/
+.diseñoFotter h4 {
+  padding: 2rem;
+  color: #000000;
+  font-size: 200%;
+  font-weight: 400;
+}
+
+/*iconos de rrss*/
+footer div a {
+  text-decoration: none;
+}
+footer div a img {
+  padding: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+/*CSS INDEX*/
+/*Contendor flex DIV del index*/
+.contenedorFlexible {
+  display: flex;
+}
+/*Header en bloque*/
+.bloqueHeader {
+  display: block;
+}
+/*barra de menu lateral*/
+.navegador {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: 2.1rem;
+  width: 8rem;
+  height: 100%;
+}
+.navegador div {
+  position: fixed;
+}
+/*Logo Principal*/
+.navegador__logo {
+  padding: 1rem;
+}
+.navegador__logo img {
+  width: auto;
+  height: auto;
+}
+
+/*menu con seciones*/
+.menu {
+  margin-top: 15rem;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.menu__section {
+  font-family: "Rubik Mono One", sans-serif;
+  padding: 1rem;
+  writing-mode: vertical-rl;
+}
+
+.menu__section:hover {
+  transform: scale(1.2);
+  background-color: #ffbb00;
+}
+
+.menu__section--colorLink {
+  color: #ffbb00;
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+.menu__section--colorLink:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*fondo del home*/
+.bodyhome {
+  background: rgb(255, 187, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 187, 0, 1) 32%,
+    rgba(255, 149, 0, 1) 100%
+  );
+}
+
+/*CONTENIDO INDEX*/
+/*Imagen y texto*/
+.portada {
+  min-height: calc(100vh - 18rem);
+  margin-left: 20rem;
+  margin-right: 40rem;
+  padding-top: 8rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+/*index texto blanco*/
+.portada_textoPrincipal {
+  max-width: 90rem;
+  color: white;
+  padding: 10rem;
+}
+/*FIN INDEX*/
+
+/*CSS SHOP*/
+/*Margen SHOP*/
+.diseñarTienda {
+  margin-left: 25%;
+  height: 95.5rem;
+}
+
+.margenTodoContenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*SHOP diseño*/
+.ordentienda {
+  padding: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  display: inline-block;
+
+  text-align: center;
+}
+/*Modificacion texto en tabla SHOP*/
+main div table tr th {
+  color: #ffffff;
+  background-color: #ffbb00bd;
+  padding: 0.5rem;
+}
+main div table tr td {
+  padding: 1rem;
+}
+
+/*FIN DE SHOP*/
+
+/*CSS WORKS*/
+
+/*botones de filtro works*/
+.botonesWorks {
+  text-align: center;
+}
+.botonesWorks button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  border: none;
+  background-color: #ffbb00;
+  padding: 1rem;
+  margin: 0.4em;
+}
+/*estilo de galeria de imagenes*/
+.galeriaFotos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+.galeriaFotos img {
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+}
+/* FIN CSS WORKS*/
+
+/* CSS pagina ABOUT GRID*/
+.contenedorgrid {
+  margin-left: 25%;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "texto1 texto1 imagen"
+    "titulo2 titulo2 titulo2"
+    "S1 S2 S3"
+    "S4 S5 S6";
+}
+.itemTitulo {
+  grid-area: titulo;
+}
+.itemImagen {
+  grid-area: imagen;
+}
+.itemTexto1 {
+  grid-area: texto1;
+  text-align: center;
+  max-width: 80rem;
+}
+
+/*Softwares*/
+.itemTitulo2 {
+  grid-area: titulo2;
+}
+.soft1 {
+  grid-area: S1;
+  text-align: center;
+}
+.soft2 {
+  grid-area: S2;
+  text-align: center;
+}
+.soft2 img {
+  width: 25rem;
+  height: 25rem;
+}
+.soft3 {
+  grid-area: S3;
+  text-align: center;
+}
+.soft4 {
+  grid-area: S4;
+  text-align: center;
+}
+.soft5 {
+  grid-area: S5;
+  text-align: center;
+}
+.soft5 img {
+  width: 23rem;
+  height: 23rem;
+}
+.soft6 {
+  grid-area: S6;
+  text-align: center;
+}
+/* FIN CSS ABOUT*/
+
+/* CSS Formulario Contacto*/
+/*formulario color de los rellenables*/
+.diseñarContact {
+  margin-left: 30%;
+  height: 95.5rem;
+}
+
+form fieldset div input {
+  border: none;
+  background-color: #ffecb6;
+}
+/*formulario textarea color rellenables*/
+form fieldset div textarea {
+  border: none;
+  background-color: #ffecb6;
+  width: 60rem;
+  height: 30rem;
+}
+
+/*formulario texto y background color*/
+form {
+  background-color: #ffbb00;
+  font-weight: 700;
+  font-size: 150%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 80rem;
+  border: none;
+  color: white;
+}
+/* FIN CSS CONTACTO*/

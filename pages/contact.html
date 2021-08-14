@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lymona</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Side Bar-->
+    <div class="contenedorFlexible">
+      <header class="bloqueHeader">
+        <nav class="navegador">
+          <!--logo principal-->
+          <div class="navegador__logo">
+            <a href="/index.html">
+              <img
+                src="https://dl.dropboxusercontent.com/s/hcbcx2ioan65qo7/logo.png?dl=0"
+                alt="logo"
+              />
+            </a>
+          </div>
+
+          <!--secciones web menu-->
+          <div>
+            <ul class="menu">
+              <li class="menu__section">
+                <a class="menu__section--colorLink" href="/index.html">HOME</a>
+              </li>
+              <li class="menu__section">
+                <a class="menu__section--colorLink" href="works.html">WORKS</a>
+              </li>
+              <li class="menu__section">
+                <a class="menu__section--colorLink" href="about.html">ABOUT</a>
+              </li>
+              <li class="menu__section">
+                <a class="menu__section--colorLink" href="shop.html">SHOP</a>
+              </li>
+              <li class="menu__section">
+                <a class="menu__section--colorLink" href="contact.html"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--Parte principal de la pagina-->
+      <main class="diseñarContact">
+        <!--Titulo pagina-->
+        <h1>Contact me!</h1>
+        <!--Formulario de contacto-->
+        <form action="">
+          <!--Cajon sin borde-->
+          <fieldset style="border: none">
+            <!---Pestaña solicitud nombre-->
+            <div>
+              <label for="YourName">Your Name</label>
+              <br />
+              <input type="text" id="YourName" name="YourName" />
+            </div>
+            <br />
+            <!---Pestaña solicitud email-->
+            <div>
+              <label for="email">Your email</label>
+              <br />
+              <input type="email" name="email" id="email" />
+            </div>
+            <br />
+            <!---Radio bottons para asunto-->
+            <div>
+              <label for="Subject">Info</label>
+              <input type="radio" name="Subject" id="Info" />
+              <label for="Subject">Job Proporsal</label>
+              <input type="radio" name="Subject" id="Job Proporsal" />
+              <label for="Subject">Others</label>
+              <input type="radio" name="Subject" id="Others" />
+            </div>
+            <!--Desplegable de opciones-->
+            <div>
+              <label for="Style">Choose a option</label>
+              <select name="Style" id="Style">
+                <option value="Illustration">Illustration</option>
+                <option value="Desing">Desing</option>
+                <option value="3D art">3D art</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <br />
+            <!---Pestaña texto-->
+            <div>
+              <label for="text">Type your mesagge here</label>
+              <br />
+              <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </div>
+            <!--Checkeo de terminos y condiciones-->
+            <div>
+              <label for="accept">Accept Terms & Conditions</label>
+              <input type="checkbox" name="accept" value="1" />
+            </div>
+            <br />
+            <!---Botones de acciones-->
+            <div>
+              <input type="reset" value="Clean all" />
+              <input type="submit" value="Send Message" />
+            </div>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+    <!--Pie de pagina-->
+    <footer class="diseñoFotter">
+      <h4>Lymona© 2021</h4>
+      <!--iconos rrss esquina superior derecha-->
+      <div>
+        <a href="https://www.instagram.com/lymonart/" title="instagram">
+          <img
+            src="https://image.flaticon.com/icons/png/128/725/725339.png"
+            alt="instagram"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/lymonagaliano/" title="linkedin">
+          <img
+            src="https://img.icons8.com/ios/452/linkedin.png"
+            alt="linkedin"
+          />
+        </a>
+        <a href="https://www.artstation.com/lymonart" title="mail">
+          <img
+            src="https://icon-library.com/images/27_artstation_logo_logos-512.png"
+            alt="Artstation"
+          />
+        </a>
+        <a href="mailto:lymonagaliano@gmail.com" title="mail">
+          <img
+            src="https://image.flaticon.com/icons/png/128/2258/2258541.png"
+            alt="mail"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
