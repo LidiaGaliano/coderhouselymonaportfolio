@@ -49,7 +49,9 @@ li {
 body {
   color: #ffbb00;
 }
-
+a {
+  text-decoration: none;
+}
 /*CSS FOOTER*/
 /*diseño footer*/
 .diseñoFotter {
@@ -77,65 +79,36 @@ footer div a img {
 }
 
 /*CSS INDEX*/
-/*Contendor flex DIV del index*/
-.contenedorFlexible {
-  display: flex;
-}
-/*Header en bloque*/
-.bloqueHeader {
-  display: block;
-}
-/*barra de menu lateral*/
-.navegador {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  font-size: 2.1rem;
-  width: 8rem;
-  height: 100%;
-}
-.navegador div {
-  position: fixed;
-}
-/*Logo Principal*/
-.navegador__logo {
-  padding: 1rem;
-}
-.navegador__logo img {
-  width: auto;
-  height: auto;
-}
 
-/*menu con seciones*/
-.menu {
-  margin-top: 15rem;
-  flex-direction: column;
+/*menu*/
+.flexContainerNav {
+  position: absolute;
+  background-color: white;
+  height: 100vh;
+  width: 10rem;
+}
+.flexContainerNav ul {
   display: flex;
+  flex-direction: column;
   position: relative;
+
+  padding: 2rem;
 }
 
-.menu__section {
-  font-family: "Rubik Mono One", sans-serif;
-  padding: 1rem;
+.flexContainerNav ul li {
+  position: relative;
+  margin-top: 3rem;
   writing-mode: vertical-rl;
+  margin-right: 1.5rem;
 }
 
-.menu__section:hover {
-  transform: scale(1.2);
-  background-color: #ffbb00;
-}
-
-.menu__section--colorLink {
+.flexContainerNav ul li a {
+  font-family: roboto;
+  font-style: norm;
   color: #ffbb00;
-  display: block;
-  text-decoration: none;
-  padding: 1rem;
-}
-.menu__section--colorLink:hover {
-  color: white;
-  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
 }
 
 /*fondo del home*/
@@ -146,6 +119,7 @@ footer div a img {
     rgba(255, 187, 0, 1) 32%,
     rgba(255, 149, 0, 1) 100%
   );
+  height: 100vh;
 }
 
 /*CONTENIDO INDEX*/
