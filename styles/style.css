@@ -109,34 +109,6 @@ footer div a img {
 }
 
 /*menu con seciones*/
-.menu {
-  margin-top: 15rem;
-  flex-direction: column;
-  display: flex;
-  position: relative;
-}
-
-.menu__section {
-  font-family: "Rubik Mono One", sans-serif;
-  padding: 1rem;
-  writing-mode: vertical-rl;
-}
-
-.menu__section:hover {
-  transform: scale(1.2);
-  background-color: #ffbb00;
-}
-
-.menu__section--colorLink {
-  color: #ffbb00;
-  display: block;
-  text-decoration: none;
-  padding: 1rem;
-}
-.menu__section--colorLink:hover {
-  color: white;
-  text-decoration: none;
-}
 
 /*fondo del home*/
 .bodyhome {
