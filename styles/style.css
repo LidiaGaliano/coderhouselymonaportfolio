@@ -13,7 +13,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 500%;
-  line-height: 5rem;
+
   padding: 3rem;
   text-align: center;
 }
@@ -52,6 +52,9 @@ body {
 a {
   text-decoration: none;
 }
+main {
+  height: 100vh;
+}
 /*CSS FOOTER*/
 /*diseño footer*/
 .diseñoFotter {
@@ -59,8 +62,10 @@ a {
   top: 0;
   left: 160rem;
   display: flex;
+
   align-items: center;
   height: 10rem;
+  flex-direction: row;
 }
 
 .diseñoFotter img {
@@ -91,7 +96,6 @@ footer div a img {
   display: flex;
   flex-direction: column;
   position: relative;
-
   padding: 2rem;
 }
 
@@ -122,31 +126,59 @@ footer div a img {
   height: 100vh;
 }
 
-/*CONTENIDO INDEX*/
-/*Imagen y texto*/
-.portada {
-  min-height: calc(100vh - 18rem);
-  margin-left: 20rem;
-  margin-right: 40rem;
-  padding-top: 8rem;
+/*CONTENIDO HOME*/
+/*Imagen,texto  y botones*/
+
+.flexContainerMain {
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  justify-content: space-around;
+  margin-left: 10rem;
 }
-/*index texto blanco*/
-.portada_textoPrincipal {
-  max-width: 90rem;
-  color: white;
-  padding: 10rem;
+.flexContainerMain img {
+  order: 2;
+  margin: 10rem;
+  flex-basis: 45rem;
 }
 
-main {
-  height: 100vh;
+.flexContainerMain__textoHome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  flex-basis: 90rem;
 }
-/*FIN INDEX*/
+
+.flexContainerMain__textoHome h1 {
+  color: white;
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+.homeButton {
+  display: flex;
+}
+.homeButton button {
+  margin: 1rem;
+  text-decoration: none;
+  background: #d96704;
+  box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+    0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+    0px 0.931014px 2.06153px rgba(0, 0, 0, 0.0484671);
+  border-radius: 30px;
+  width: 36.8rem;
+  height: 6.8rem;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 500;
+  flex-grow: 4;
+}
+
+/*FIN HOME*/
 
 /*CSS SHOP*/
 /*Margen SHOP*/
