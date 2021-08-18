@@ -194,7 +194,7 @@ main div table tr td {
   padding: 1rem;
   margin: 0.4em;
 }
-
+/*Galleria Bootstrap*/
 .container-fluid {
   max-width: 90%;
   padding-left: 10rem;
@@ -216,19 +216,6 @@ main div table tr td {
   height: 100%;
 }
 
-/*estilo de galeria de imagenes ANTIGUO 
-.galeriaFotos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-evenly;
-}
-.galeriaFotos img {
-  padding: 1rem;
-  align-items: center;
-  display: flex;
-}*/
 /* FIN CSS WORKS*/
 
 /* CSS pagina ABOUT GRID*/
