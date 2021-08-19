@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lymona</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="./app.js"></script>
 
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,60 +27,73 @@
   </head>
   <body class="bodyhome">
     <!--Side Bar-->
-<header>
-  <nav class="flexContainerNav">
-   
-    <ul>
-<img src="./img/Logo amarillo.png" alt="Logo Lymona ">
-
-    <li>
-      <a href="./pages/works.html" > WORKS</a>
-    </li>
-    <li>
-      <a href="./pages/about.html" > ABOUT</a>
-    </li>
-    <li>
-      <a href="./pages/shop.html" > SHOP</a>
-    </li>
-    <li>
-      <a href="./pages/contact.html" > CONTACT</a>
-    </li>
-  </ul>
-
-</nav>
-</header>   
-      <!--Parte principal de la pagina-->
-      <main>
-        <div class="portada">
-          <!--Texto en bocadillo-->
-          <div class="portada_textoPrincipal">
-            <h1>
-              HELLO! I'M LYMONA ILLUSTRATOR, DESIGNER AND 3D ARTIST.
-            </h1>
-          </div>
-          <!--imagen central interactiva-->
+    <header>
+      <nav class="flexContainerNav">
+        <ul class="menu_items">
+          <img src="./img/Logo amarillo.png" alt="Logo Lymona " />
+          <!--logo largo para menu de hamburgesa-->
           <img
-            src="https://dl.dropboxusercontent.com/s/50qzfkp78hrng1z/retrato%20imagen%20central.png?dl=0"
-            alt="imagen central"
+            src="./img/LOGO LARGO.png"
+            class="logoMenuBurger"
+            alt="logo largo"
           />
+
+          <li>
+            <a href="./pages/works.html"> WORKS</a>
+          </li>
+          <li>
+            <a href="./pages/about.html"> ABOUT</a>
+          </li>
+          <li>
+            <a href="./pages/shop.html"> SHOP</a>
+          </li>
+          <li>
+            <a href="./pages/contact.html"> CONTACT</a>
+          </li>
+        </ul>
+        <img src="./img/menu.png" class="btn_menu" alt="icono menu" />
+      </nav>
+    </header>
+    <!--Parte principal de la pagina-->
+    <main class="flexContainerMain">
+      <img src="./img/retrato imagen central.png" alt="imagen central" />
+      <!-- logo para media queries-->
+      <img
+        src="./img/LOGO LARGO.png"
+        class="logoMobile"
+        alt="logo secundario"
+      />
+      <!--  fin logo para media queries-->
+      <div class="flexContainerMain__textoHome">
+        <h1>HELLO! I'M LYMONA ILLUSTRATOR, DESIGNER AND 3D ARTIST</h1>
+        <h2>ILLUSTRATOR, DESINGNER AND 3D</h2>
+
+        <div class="homeButton">
+          <a href="./pages/works.html">
+            <button>SEE MY WORKS</button>
+          </a>
+          <a href="./pages/contact.html">
+            <button>TALK ME!</button>
+          </a>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
+
     <!--Pie de pagina-->
     <footer class="diseñoFotter">
       <!--iconos rrss esquina superior derecha-->
       <div>
-        <a href="https://www.instagram.com/lymonart/" title="instagram">
-          <img src="./img/Recurso 2.png" alt="instagram" />
-        </a>
         <a href="https://www.linkedin.com/in/lymonagaliano/" title="linkedin">
-          <img src="./img/Recurso 4.png" alt="linkedin" />
+          <img src="./img/Recurso 9.png" alt="linkedin" />
         </a>
-        <a href="https://www.artstation.com/lymonart" title="mail">
-          <img src="./img/Recurso 1.png" alt="Artstation" />
+        <a href="https://www.instagram.com/lymonart/" title="instagram">
+          <img src="./img/Recurso 8.png" alt="instagram" />
         </a>
         <a href="mailto:lymonagaliano@gmail.com" title="mail">
-          <img src="./img/Recurso 3.png" alt="mail" />
+          <img src="./img/Recurso 10.png" alt="mail" />
+        </a>
+        <a href="https://www.artstation.com/lymonart" title="mail">
+          <img src="./img/Recurso 6.png" alt="Artstation" />
         </a>
       </div>
     </footer>
