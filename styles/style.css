@@ -77,6 +77,52 @@ footer div a img {
   width: 5rem;
   height: 5rem;
 }
+/*CSS NUEVO FOOTER*/
+.flexContainerFooter {
+  margin-top: 1rem;
+  padding-bottom: 5rem;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-left: 8rem;
+  width: 94%;
+  height: 20rem;
+  background-color: #231f20;
+}
+.flexContainerFooter__politicas {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 0.6rem;
+  order: 1;
+}
+
+.flexContainerFooter__politicas a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.flexContainerFooter__logoGrande {
+  width: 46.75rem;
+  order: 2;
+}
+.flexContainerFooter__redesycopy {
+  display: block;
+  order: 3;
+}
+.flexContainerFooter__redesycopy h4 {
+  font-weight: 700;
+  padding-right: 0.3rem;
+  text-align: right;
+  color: #ffffff;
+}
 
 /*CSS INDEX*/
 
@@ -196,19 +242,28 @@ main div table tr td {
   padding: 1rem;
   margin: 0.4em;
 }
-/*estilo de galeria de imagenes*/
-.galeriaFotos {
+/*Galleria Bootstrap*/
+.container-fluid {
+  max-width: 90%;
+  padding-left: 10rem;
+}
+.row {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  justify-content: space-evenly;
 }
-.galeriaFotos img {
-  padding: 1rem;
-  align-items: center;
-  display: flex;
+.row .column {
+  flex: 25rem;
+  width: auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  height: 100%;
 }
+.row .column img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
 /* FIN CSS WORKS*/
 
 /* CSS pagina ABOUT GRID*/
