@@ -142,27 +142,6 @@ footer div a img {
 .menu_items {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  align-items: center;
-  background-color: #ffffff;
-  font-size: 2.1rem;
-  width: 8rem;
-  height: 100%;
-}
-.navegador div {
-  position: fixed;
-}
-/*Logo Principal*/
-.navegador__logo {
-  padding: 1rem;
-}
-.navegador__logo img {
-  width: auto;
-  height: auto;
-}
-
-/*menu con seciones*/
-=======
   position: relative;
   padding: 2rem;
 }
@@ -198,7 +177,6 @@ footer div a img {
   top: 0;
 }
 /* fin menu*/
->>>>>>> origin/dev-home
 
 /*fondo del home*/
 .bodyhome {
