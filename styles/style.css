@@ -59,8 +59,8 @@ main {
 /*diseño footer*/
 .diseñoFotter {
   position: absolute;
-  top: 5%;
-  right: 3%;
+  top: 4%;
+  right: 2%;
   display: flex;
 
   align-items: center;
@@ -71,7 +71,7 @@ main {
 }
 
 .diseñoFotter img {
-  width: 16%;
+  max-width: 18%;
   height: auto;
 }
 
@@ -108,7 +108,7 @@ footer div a img {
 
 .flexContainerNav ul li a {
   font-family: roboto;
-  font-style: norm;
+  font-style: normal;
   color: #ffbb00;
   font-size: 3rem;
   font-weight: bold;
@@ -135,12 +135,12 @@ footer div a img {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
+  margin-left: 7rem;
 }
 .flexContainerMain img {
   order: 2;
-  margin: 10rem;
-  flex-basis: 45rem;
+  margin: 5rem;
+  flex-basis: 24%;
 }
 
 .flexContainerMain__textoHome {
@@ -150,13 +150,14 @@ footer div a img {
   justify-content: center;
   align-items: center;
   order: 1;
-  flex-basis: 90rem;
+  flex-basis: 45%;
 }
 
 .flexContainerMain__textoHome h1 {
   color: white;
-  font-size: 6.5rem;
+  font-size: 656%;
   font-weight: 700;
+  margin-bottom: 0.9rem;
 }
 .homeButton {
   display: flex;
@@ -176,10 +177,15 @@ footer div a img {
   width: 36.8rem;
   height: 6.8rem;
   border: none;
+}
+.homeButton button {
   font-size: 2.5rem;
   color: white;
   font-weight: 500;
-  flex-grow: 4;
+}
+.homeButton button:hover {
+  background: rgba(0, 0, 0, 0.71);
+  color: rgb(212, 212, 212);
 }
 
 /*FIN HOME*/
