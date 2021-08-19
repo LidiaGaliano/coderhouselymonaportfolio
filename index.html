@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lymona</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script src="./app.js"></script>
 
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,8 +29,14 @@
     <!--Side Bar-->
     <header>
       <nav class="flexContainerNav">
-        <ul>
+        <ul class="menu_items">
           <img src="./img/Logo amarillo.png" alt="Logo Lymona " />
+          <!--logo largo para menu de hamburgesa-->
+          <img
+            src="./img/LOGO LARGO.png"
+            class="logoMenuBurger"
+            alt="logo largo"
+          />
 
           <li>
             <a href="./pages/works.html"> WORKS</a>
@@ -38,14 +51,22 @@
             <a href="./pages/contact.html"> CONTACT</a>
           </li>
         </ul>
+        <img src="./img/menu.png" class="btn_menu" alt="icono menu" />
       </nav>
     </header>
     <!--Parte principal de la pagina-->
     <main class="flexContainerMain">
       <img src="./img/retrato imagen central.png" alt="imagen central" />
-
+      <!-- logo para media queries-->
+      <img
+        src="./img/LOGO LARGO.png"
+        class="logoMobile"
+        alt="logo secundario"
+      />
+      <!--  fin logo para media queries-->
       <div class="flexContainerMain__textoHome">
         <h1>HELLO! I'M LYMONA ILLUSTRATOR, DESIGNER AND 3D ARTIST</h1>
+        <h2>ILLUSTRATOR, DESINGNER AND 3D</h2>
 
         <div class="homeButton">
           <a href="./pages/works.html">

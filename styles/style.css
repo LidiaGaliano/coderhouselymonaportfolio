@@ -55,6 +55,9 @@ a {
 main {
   height: 100vh;
 }
+
+/*CSS INDEX*/
+
 /*CSS FOOTER*/
 /*diseño footer*/
 .diseñoFotter {
@@ -83,8 +86,6 @@ footer div a img {
   padding: 0.7rem;
 }
 
-/*CSS INDEX*/
-
 /*menu*/
 .flexContainerNav {
   position: absolute;
@@ -92,21 +93,21 @@ footer div a img {
   height: 100vh;
   width: 10rem;
 }
-.flexContainerNav ul {
+.menu_items {
   display: flex;
   flex-direction: column;
   position: relative;
   padding: 2rem;
 }
 
-.flexContainerNav ul li {
+.menu_items li {
   position: relative;
   margin-top: 3rem;
   writing-mode: vertical-rl;
   margin-right: 1.5rem;
 }
 
-.flexContainerNav ul li a {
+.menu_items li a {
   font-family: roboto;
   font-style: normal;
   color: #ffbb00;
@@ -114,6 +115,22 @@ footer div a img {
   font-weight: bold;
   padding: 2rem;
 }
+.btn_menu {
+  background-color: blueviolet;
+  width: 5.4rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  display: none;
+}
+
+/*ocultar menu JSS*/
+
+.show {
+  top: 0;
+}
+/* fin menu*/
 
 /*fondo del home*/
 .bodyhome {
@@ -126,7 +143,7 @@ footer div a img {
   height: 100vh;
 }
 
-/*CONTENIDO HOME*/
+/*CONTENIDO HOME MAIN*/
 /*Imagen,texto  y botones*/
 
 .flexContainerMain {
@@ -141,6 +158,11 @@ footer div a img {
   order: 2;
   margin: 5rem;
   flex-basis: 24%;
+}
+
+/*logo media queries movil*/
+.logoMobile {
+  display: none;
 }
 
 .flexContainerMain__textoHome {
@@ -158,6 +180,14 @@ footer div a img {
   font-size: 656%;
   font-weight: 700;
   margin-bottom: 0.9rem;
+}
+
+.flexContainerMain__textoHome h2 {
+  color: white;
+  font-size: 356%;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  display: none;
 }
 .homeButton {
   display: flex;
@@ -187,8 +217,9 @@ footer div a img {
   background: rgba(0, 0, 0, 0.71);
   color: rgb(212, 212, 212);
 }
+/*FIN HOME MAIN*/
 
-/*FIN HOME*/
+/*FIN DE INDEX*/
 
 /*CSS SHOP*/
 /*Margen SHOP*/
@@ -349,3 +380,68 @@ form {
   color: white;
 }
 /* FIN CSS CONTACTO*/
+
+/* MEDIA QUERIES*/
+
+/*  inicio media querie de home*/
+@media screen and (max-width: 360px) {
+  .bodyhome {
+    height: 100vh;
+  }
+  .flexContainerNav {
+    display: flex;
+    flex-direction: row;
+    height: 0;
+  }
+  .menu_items img {
+    display: none;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+
+  .menu_items {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(27, 27, 27, 1);
+    top: -150vh;
+    text-align: center;
+    transition: all 0.4s;
+  }
+
+  .menu_items li {
+    margin: 25% 0 0 0;
+    writing-mode: horizontal-tb;
+    line-height: 20%;
+  }
+
+  .menu_items li a {
+    color: white;
+  }
+  .flexContainerMain img {
+    display: none;
+  }
+
+  .flexContainerMain__textoHome {
+    display: none;
+  }
+  .logoMobile {
+    display: flex;
+    position: absolute;
+  }
+
+  .flexContainerMain h2 {
+    display: flex;
+  }
+  .diseñoFotter {
+    position: absolute;
+    top: 90%;
+    right: 15%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
