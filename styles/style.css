@@ -59,18 +59,20 @@ main {
 /*diseño footer*/
 .diseñoFotter {
   position: absolute;
-  top: 0;
-  left: 160rem;
+  top: 5%;
+  right: 3%;
   display: flex;
 
   align-items: center;
-  height: 10rem;
+  align-content: center;
+
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .diseñoFotter img {
-  width: 4rem;
-  height: 4rem;
+  width: 16%;
+  height: auto;
 }
 
 /*iconos de rrss*/
@@ -78,9 +80,7 @@ footer div a {
   text-decoration: none;
 }
 footer div a img {
-  padding: 0.5rem;
-  width: 5rem;
-  height: 5rem;
+  padding: 0.7rem;
 }
 
 /*CSS INDEX*/
@@ -160,6 +160,10 @@ footer div a img {
 }
 .homeButton {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
 }
 .homeButton button {
   margin: 1rem;
