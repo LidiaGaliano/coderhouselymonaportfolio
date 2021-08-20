@@ -132,6 +132,17 @@ footer div a img {
   color: #ffffff;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
 /*menu*/
 .flexContainerNav {
   position: absolute;
@@ -305,6 +316,9 @@ main div table tr td {
 /*botones de filtro works*/
 .botonesWorks {
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .botonesWorks button {
   font-family: "Roboto", sans-serif;
