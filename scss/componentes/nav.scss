@@ -1,0 +1,51 @@
+/*menu*/
+
+.flexContainerNav {
+  position: absolute;
+  background-color: white;
+  min-height: 100vh;
+  width: 10rem;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+
+  li {
+    position: relative;
+    margin-top: 3rem;
+    writing-mode: vertical-rl;
+    margin-right: 1.5rem;
+
+    a {
+      font-family: roboto;
+      font-style: normal;
+      color: #ffbb00;
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 2rem;
+    }
+  }
+}
+
+// menu media queries con js
+
+.btn_menu {
+  background-color: blueviolet;
+  width: 5.4rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  display: none;
+}
+
+/*ocultar menu JSS*/
+
+.show {
+  top: 0;
+}
+
+/* fin menu*/

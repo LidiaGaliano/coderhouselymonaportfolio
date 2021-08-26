@@ -1,0 +1,39 @@
+/*CSS SHOP*/
+/*Margen SHOP*/
+
+.diseñarTienda {
+  margin-left: 25%;
+  height: 95.5rem;
+}
+
+.margenTodoContenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*SHOP diseño*/
+
+.ordentienda {
+  padding: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  display: inline-block;
+  text-align: center;
+}
+
+/*Modificacion texto en tabla SHOP*/
+
+main div table tr {
+  th {
+    color: #ffffff;
+    background-color: #ffbb00bd;
+    padding: 0.5rem;
+  }
+
+  td {
+    padding: 1rem;
+  }
+}
+
+/*FIN DE SHOP*/
