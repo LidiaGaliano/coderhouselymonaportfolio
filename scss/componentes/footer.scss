@@ -1,0 +1,62 @@
+/*CSS NUEVO FOOTER*/
+
+.flexContainerFooter {
+  margin-top: 1rem;
+  padding-bottom: 5rem;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-left: 8rem;
+  width: 94%;
+  height: 20rem;
+  background-color: #231f20;
+}
+
+.flexContainerFooter__politicas {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 0.6rem;
+  order: 1;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 150%;
+    font-weight: 700;
+  }
+}
+
+.flexContainerFooter__logoGrande {
+  width: 46.75rem;
+  order: 2;
+}
+
+.flexContainerFooter__redesycopy {
+  display: block;
+  order: 3;
+
+  h4 {
+    font-weight: 700;
+    padding-right: 0.3rem;
+    text-align: right;
+    color: #ffffff;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+
+  &:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+  }
+}

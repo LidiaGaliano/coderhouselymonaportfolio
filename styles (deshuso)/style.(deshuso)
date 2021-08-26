@@ -1,0 +1,516 @@
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*unidad de medida responsive*/
+html {
+  font-size: 62.5%;
+}
+
+/*estilos texto*/
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 500%;
+
+  padding: 3rem;
+  text-align: center;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 300%;
+  line-height: 7rem;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  line-height: 3rem;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  line-height: 3rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  line-height: 3rem;
+  text-align: left;
+}
+
+/*estilo decorativo de todas las listas*/
+li {
+  list-style-type: none;
+}
+
+/*Body color del texto*/
+body {
+  color: #ffbb00;
+}
+a {
+  text-decoration: none;
+}
+main {
+  height: 100vh;
+}
+
+/*CSS INDEX*/
+
+/*CSS FOOTER*/
+/*diseño footer*/
+.diseñoFotter {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  display: flex;
+
+  align-items: center;
+  align-content: center;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.diseñoFotter img {
+  max-width: 18%;
+  height: auto;
+}
+
+/*iconos de rrss*/
+footer div a {
+  text-decoration: none;
+}
+footer div a img {
+  padding: 0.7rem;
+}
+/*CSS NUEVO FOOTER*/
+.flexContainerFooter {
+  margin-top: 1rem;
+  padding-bottom: 5rem;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-left: 8rem;
+  width: 94%;
+  height: 20rem;
+  background-color: #231f20;
+}
+.flexContainerFooter__politicas {
+  text-align: left;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 0.6rem;
+  order: 1;
+}
+
+.flexContainerFooter__politicas a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.flexContainerFooter__logoGrande {
+  width: 46.75rem;
+  order: 2;
+}
+.flexContainerFooter__redesycopy {
+  display: block;
+  order: 3;
+}
+.flexContainerFooter__redesycopy h4 {
+  font-weight: 700;
+  padding-right: 0.3rem;
+  text-align: right;
+  color: #ffffff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+/*menu*/
+.flexContainerNav {
+  position: absolute;
+  background-color: white;
+  height: 100vh;
+  width: 10rem;
+}
+.menu_items {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem;
+}
+
+.menu_items li {
+  position: relative;
+  margin-top: 3rem;
+  writing-mode: vertical-rl;
+  margin-right: 1.5rem;
+}
+
+.menu_items li a {
+  font-family: roboto;
+  font-style: normal;
+  color: #ffbb00;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+.btn_menu {
+  background-color: blueviolet;
+  width: 5.4rem;
+  height: 5.4rem;
+  position: absolute;
+  left: 23px;
+  top: 24px;
+  display: none;
+}
+
+/*ocultar menu JSS*/
+
+.show {
+  top: 0;
+}
+/* fin menu*/
+
+/*fondo del home*/
+.bodyhome {
+  background: rgb(255, 187, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 187, 0, 1) 32%,
+    rgba(255, 149, 0, 1) 100%
+  );
+  height: 100vh;
+}
+
+/*CONTENIDO HOME MAIN*/
+/*Imagen,texto  y botones*/
+
+.flexContainerMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7rem;
+}
+.flexContainerMain img {
+  order: 2;
+  margin: 5rem;
+  flex-basis: 24%;
+}
+
+/*logo media queries movil*/
+.logoMobile {
+  display: none;
+}
+
+.flexContainerMain__textoHome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  flex-basis: 45%;
+}
+
+.flexContainerMain__textoHome h1 {
+  color: white;
+  font-size: 656%;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+}
+
+.flexContainerMain__textoHome h2 {
+  color: white;
+  font-size: 356%;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  display: none;
+}
+.homeButton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+}
+.homeButton button {
+  margin: 1rem;
+  text-decoration: none;
+  background: #d96704;
+  box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+    0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+    0px 0.931014px 2.06153px rgba(0, 0, 0, 0.0484671);
+  border-radius: 30px;
+  width: 36.8rem;
+  height: 6.8rem;
+  border: none;
+}
+.homeButton button {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 500;
+}
+.homeButton button:hover {
+  background: rgba(0, 0, 0, 0.71);
+  color: rgb(212, 212, 212);
+}
+/*FIN HOME MAIN*/
+
+/*FIN DE INDEX*/
+
+/*CSS SHOP*/
+/*Margen SHOP*/
+.diseñarTienda {
+  margin-left: 25%;
+  height: 95.5rem;
+}
+
+.margenTodoContenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/*SHOP diseño*/
+.ordentienda {
+  padding: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  display: inline-block;
+
+  text-align: center;
+}
+/*Modificacion texto en tabla SHOP*/
+main div table tr th {
+  color: #ffffff;
+  background-color: #ffbb00bd;
+  padding: 0.5rem;
+}
+main div table tr td {
+  padding: 1rem;
+}
+
+/*FIN DE SHOP*/
+
+/*CSS WORKS*/
+
+/*botones de filtro works*/
+.botonesWorks {
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.botonesWorks button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  border: none;
+  background-color: #ffbb00;
+  padding: 1rem;
+  margin: 0.4em;
+}
+/*Galleria Bootstrap*/
+.container-fluid {
+  max-width: 90%;
+  padding-left: 10rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row .column {
+  flex: 25rem;
+  width: auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  height: 100%;
+}
+.row .column img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* FIN CSS WORKS*/
+
+/* CSS pagina ABOUT GRID*/
+.contenedorgrid {
+  margin-left: 25%;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "texto1 texto1 imagen"
+    "titulo2 titulo2 titulo2"
+    "S1 S2 S3"
+    "S4 S5 S6";
+}
+.itemTitulo {
+  grid-area: titulo;
+}
+.itemImagen {
+  grid-area: imagen;
+}
+.itemTexto1 {
+  grid-area: texto1;
+  text-align: center;
+  max-width: 80rem;
+}
+
+/*Softwares*/
+.itemTitulo2 {
+  grid-area: titulo2;
+}
+.soft1 {
+  grid-area: S1;
+  text-align: center;
+}
+.soft2 {
+  grid-area: S2;
+  text-align: center;
+}
+.soft2 img {
+  width: 25rem;
+  height: 25rem;
+}
+.soft3 {
+  grid-area: S3;
+  text-align: center;
+}
+.soft4 {
+  grid-area: S4;
+  text-align: center;
+}
+.soft5 {
+  grid-area: S5;
+  text-align: center;
+}
+.soft5 img {
+  width: 23rem;
+  height: 23rem;
+}
+.soft6 {
+  grid-area: S6;
+  text-align: center;
+}
+/* FIN CSS ABOUT*/
+
+/* CSS Formulario Contacto*/
+/*formulario color de los rellenables*/
+.diseñarContact {
+  margin-left: 30%;
+  height: 95.5rem;
+}
+
+form fieldset div input {
+  border: none;
+  background-color: #ffecb6;
+}
+/*formulario textarea color rellenables*/
+form fieldset div textarea {
+  border: none;
+  background-color: #ffecb6;
+  width: 60rem;
+  height: 30rem;
+}
+
+/*formulario texto y background color*/
+form {
+  background-color: #ffbb00;
+  font-weight: 700;
+  font-size: 150%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 80rem;
+  border: none;
+  color: white;
+}
+/* FIN CSS CONTACTO*/
+
+/* MEDIA QUERIES*/
+
+/*  inicio media querie de home*/
+@media screen and (max-width: 360px) {
+  .bodyhome {
+    height: 100vh;
+  }
+  .flexContainerNav {
+    display: flex;
+    flex-direction: row;
+    height: 0;
+  }
+  .menu_items img {
+    display: none;
+  }
+  .btn_menu {
+    display: inline-flex;
+  }
+
+  .menu_items {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(27, 27, 27, 1);
+    top: -150vh;
+    text-align: center;
+    transition: all 0.4s;
+  }
+
+  .menu_items li {
+    margin: 25% 0 0 0;
+    writing-mode: horizontal-tb;
+    line-height: 20%;
+  }
+
+  .menu_items li a {
+    color: white;
+  }
+  .flexContainerMain img {
+    display: none;
+  }
+
+  .flexContainerMain__textoHome {
+    display: none;
+  }
+  .logoMobile {
+    display: flex;
+    position: absolute;
+  }
+
+  .flexContainerMain h2 {
+    display: flex;
+  }
+  .diseñoFotter {
+    position: absolute;
+    top: 90%;
+    right: 15%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}

@@ -1,0 +1,48 @@
+/*CSS WORKS*/
+
+/*botones de filtro works*/
+
+.botonesWorks {
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: #ffbb00;
+    padding: 1rem;
+    margin: 0.4em;
+  }
+}
+
+/*Galleria Bootstrap*/
+
+.container-fluid {
+  max-width: 90%;
+  padding-left: 10rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    flex: 25rem;
+    width: auto;
+    overflow: hidden;
+    padding: 0.5rem;
+    height: 100%;
+
+    img {
+      margin-top: 1rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* FIN CSS WORKS*/

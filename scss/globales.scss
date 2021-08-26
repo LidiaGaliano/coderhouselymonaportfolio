@@ -1,0 +1,69 @@
+/*Reseteo*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*unidad de medida responsive*/
+
+html {
+  font-size: 62.5%;
+}
+
+/*estilos texto*/
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 500%;
+  padding: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 300%;
+  line-height: 7rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  line-height: 3rem;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  line-height: 3rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  line-height: 3rem;
+  text-align: left;
+}
+
+/*estilo decorativo de todas las listas*/
+
+li {
+  list-style-type: none;
+}
+
+/*Body color del texto*/
+
+body {
+  color: #ffbb00;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+}
