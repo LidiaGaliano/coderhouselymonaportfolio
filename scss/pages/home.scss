@@ -4,6 +4,7 @@
   background: fixed
     linear-gradient(0deg, rgba(255, 187, 0, 1) 32%, rgba(255, 149, 0, 1) 100%);
   min-height: 100%;
+  min-width: 100vw;
 }
 
 /*CONTENIDO HOME MAIN*/
@@ -17,10 +18,10 @@
   align-items: center;
   margin-left: 7rem;
 
-  img {
+  .logoPrincipal {
     order: 2;
     margin: 5rem;
-    flex-basis: 24%;
+    flex-basis: 474px/1850px * 100%;
   }
   /*logo media queries movil*/
 
@@ -35,19 +36,22 @@
     justify-content: center;
     align-items: center;
     order: 1;
-    flex-basis: 45%;
+    max-height: 244px;
+    max-width: 851px;
+    flex-basis: 850px/1850px * 100%;
     margin-left: 10px;
 
     h1 {
       color: white;
-      font-size: 656%;
+      font-size: 600%;
       font-weight: 700;
       margin-bottom: 0.9rem;
+      min-width: 800px;
     }
 
     h2 {
       color: white;
-      font-size: 356%;
+      font-size: 3.56 * 100%;
       font-weight: 700;
       margin-bottom: 0.9rem;
       display: none;
@@ -69,10 +73,10 @@
       0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
       0px 0.931014px 2.06153px rgba(0, 0, 0, 0.0484671);
     border-radius: 30px;
-    width: 36.8rem;
+    width: 20vw;
     height: 6.8rem;
     border: none;
-    font-size: 2.5rem;
+    font-size: 1.5vw;
     color: white;
     font-weight: 500;
 
