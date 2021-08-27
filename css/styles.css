@@ -78,20 +78,6 @@ main {
       font-weight: bold;
       padding: 2rem; }
 
-.btn_menu {
-  background-color: blueviolet;
-  width: 5.4rem;
-  height: 5.4rem;
-  position: absolute;
-  left: 23px;
-  top: 24px;
-  display: none; }
-
-/*ocultar menu JSS*/
-.show {
-  top: 0; }
-
-/* fin menu*/
 /*CSS FOOTER*/
 /*diseño footer*/
 .diseñoFotter {
@@ -104,7 +90,7 @@ main {
   flex-direction: row;
   flex-wrap: nowrap; }
   .diseñoFotter img {
-    max-width: 18%;
+    max-width: 20%;
     height: auto; }
 
 /*iconos de rrss*/
@@ -167,7 +153,8 @@ footer div a {
 /* home*/
 .bodyhome {
   background: fixed linear-gradient(0deg, #ffbb00 32%, #ff9500 100%);
-  min-height: 100%; }
+  min-height: 100%;
+  min-width: 100vw; }
 
 /*CONTENIDO HOME MAIN*/
 /*Imagen,texto  y botones*/
@@ -179,10 +166,10 @@ footer div a {
   align-items: center;
   margin-left: 7rem;
   /*logo media queries movil*/ }
-  .flexContainerMain img {
+  .flexContainerMain .logoPrincipal {
     order: 2;
     margin: 5rem;
-    flex-basis: 24%; }
+    flex-basis: 25.62162%; }
   .flexContainerMain .logoMobile {
     display: none; }
   .flexContainerMain .flexContainerMain__textoHome {
@@ -192,13 +179,16 @@ footer div a {
     justify-content: center;
     align-items: center;
     order: 1;
-    flex-basis: 45%;
+    max-height: 244px;
+    max-width: 851px;
+    flex-basis: 45.94595%;
     margin-left: 10px; }
     .flexContainerMain .flexContainerMain__textoHome h1 {
       color: white;
-      font-size: 656%;
+      font-size: 600%;
       font-weight: 700;
-      margin-bottom: 0.9rem; }
+      margin-bottom: 0.9rem;
+      min-width: 800px; }
     .flexContainerMain .flexContainerMain__textoHome h2 {
       color: white;
       font-size: 356%;
@@ -218,10 +208,10 @@ footer div a {
     background: #d96704;
     box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
     border-radius: 30px;
-    width: 36.8rem;
+    width: 20vw;
     height: 6.8rem;
     border: none;
-    font-size: 2.5rem;
+    font-size: 1.5vw;
     color: white;
     font-weight: 500; }
     .homeButton button:hover {
@@ -373,45 +363,133 @@ form {
     height: 30rem; }
 
 /*  inicio media querie de home*/
-@media screen and (max-width: 360px) {
+@media screen and (min-width: 1940px) {
   .bodyhome {
-    height: 100vh; }
-  .flexContainerNav {
+    background: fixed linear-gradient(0deg, #ffbb00 32%, #ff9500 100%);
+    min-height: 100%; }
+  .flexContainerMain {
     display: flex;
     flex-direction: row;
-    height: 0; }
-  .menu_items img {
-    display: none; }
-  .btn_menu {
-    display: inline-flex; }
-  .menu_items {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1b1b1b;
-    top: -150vh;
-    text-align: center;
-    transition: all 0.4s; }
-    .menu_items li {
-      margin: 25% 0 0 0;
-      writing-mode: horizontal-tb;
-      line-height: 20%; }
-      .menu_items li a {
-        color: white; }
-  .flexContainerMain img,
-  .flexContainerMain__textoHome {
-    display: none; }
-  .logoMobile {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    gap: 4%; }
+    .flexContainerMain .logoPrincipal {
+      order: 2;
+      max-width: 680px; }
+    .flexContainerMain .flexContainerMain__textoHome {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      margin-left: 10px; }
+      .flexContainerMain .flexContainerMain__textoHome h1 {
+        color: white;
+        font-size: 750%;
+        font-weight: 700;
+        margin-bottom: 0.9rem;
+        min-width: 1000px; }
+      .flexContainerMain .flexContainerMain__textoHome h2 {
+        color: white;
+        font-size: 356%;
+        font-weight: 700;
+        margin-bottom: 0.9rem;
+        display: none; }
+  .homeButton {
     display: flex;
-    position: absolute; }
-  .flexContainerMain h2 {
-    display: flex; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center; }
+    .homeButton button {
+      margin: 1rem;
+      text-decoration: none;
+      background: #d96704;
+      box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+      border-radius: 30px;
+      width: 397px;
+      height: 7.8rem;
+      border: none;
+      font-size: 1.5vw;
+      color: white;
+      font-weight: 500; }
+      .homeButton button:hover {
+        background: rgba(0, 0, 0, 0.71);
+        color: #d4d4d4; } }
+
+@media screen and (max-width: 1400px) {
+  .bodyhome {
+    background: fixed linear-gradient(0deg, #7dbb00 32%, #ff9500 100%);
+    min-height: 100%; }
+  .logolymona {
+    display: none; }
+  .flexContainerNav {
+    position: absolute;
+    background-color: transparent;
+    min-height: 100vh;
+    width: 10rem; }
+  .menu_items {
+    display: none; }
+  .logoMenuBurger {
+    display: block; }
+  .btn_menu {
+    width: 5.4rem;
+    height: 5.4rem;
+    position: absolute;
+    left: 45%;
+    top: 4%;
+    display: block; }
+  .flexContainerMain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    gap: 4%; }
+    .flexContainerMain .logoPrincipal {
+      display: none; }
+    .flexContainerMain .logoMobile {
+      display: flex; }
+    .flexContainerMain .flexContainerMain__textoHome {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .flexContainerMain .flexContainerMain__textoHome h1 {
+        display: none; }
+      .flexContainerMain .flexContainerMain__textoHome h2 {
+        color: #231f20;
+        font-size: 356%;
+        font-weight: 700;
+        margin-bottom: 0.9rem;
+        display: flex; }
+  .homeButton {
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    justify-items: center; }
+    .homeButton button {
+      text-decoration: none;
+      background: #d96704;
+      box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+      border-radius: 30px;
+      border: none;
+      font-size: 1.5vw;
+      color: white;
+      font-weight: 500; }
+      .homeButton button:hover {
+        background: rgba(0, 0, 0, 0.71);
+        color: #d4d4d4; }
   .diseñoFotter {
     position: absolute;
-    top: 90%;
-    right: 15%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap; } }
+    top: 38.19444%;
+    left: 38.19444%;
+    width: 100vw;
+    height: 90vh;
+    /*iconos de rrss*/ } }

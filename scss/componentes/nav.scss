@@ -29,23 +29,3 @@
     }
   }
 }
-
-// menu media queries con js
-
-.btn_menu {
-  background-color: blueviolet;
-  width: 5.4rem;
-  height: 5.4rem;
-  position: absolute;
-  left: 23px;
-  top: 24px;
-  display: none;
-}
-
-/*ocultar menu JSS*/
-
-.show {
-  top: 0;
-}
-
-/* fin menu*/
