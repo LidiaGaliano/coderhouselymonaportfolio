@@ -22,6 +22,37 @@
     margin: 5rem;
     flex-basis: 24%;
   }
+  /*logo media queries movil*/
+
+  .logoMobile {
+    display: none;
+  }
+
+  .flexContainerMain__textoHome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    flex-basis: 45%;
+    margin-left: 10px;
+
+    h1 {
+      color: white;
+      font-size: 656%;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+    }
+
+    h2 {
+      color: white;
+      font-size: 356%;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      display: none;
+    }
+  }
 }
 .homeButton {
   display: flex;

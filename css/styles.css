@@ -177,11 +177,34 @@ footer div a {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin-left: 7rem; }
+  margin-left: 7rem;
+  /*logo media queries movil*/ }
   .flexContainerMain img {
     order: 2;
     margin: 5rem;
     flex-basis: 24%; }
+  .flexContainerMain .logoMobile {
+    display: none; }
+  .flexContainerMain .flexContainerMain__textoHome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    flex-basis: 45%;
+    margin-left: 10px; }
+    .flexContainerMain .flexContainerMain__textoHome h1 {
+      color: white;
+      font-size: 656%;
+      font-weight: 700;
+      margin-bottom: 0.9rem; }
+    .flexContainerMain .flexContainerMain__textoHome h2 {
+      color: white;
+      font-size: 356%;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      display: none; }
 
 .homeButton {
   display: flex;
@@ -392,27 +415,3 @@ form {
     align-content: center;
     flex-direction: row;
     flex-wrap: nowrap; } }
-
-/*logo media queries movil*/
-.logoMobile {
-  display: none; }
-
-.flexContainerMain__textoHome {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  order: 1;
-  flex-basis: 45%; }
-  .flexContainerMain__textoHome h1 {
-    color: white;
-    font-size: 656%;
-    font-weight: 700;
-    margin-bottom: 0.9rem; }
-  .flexContainerMain__textoHome h2 {
-    color: white;
-    font-size: 356%;
-    font-weight: 700;
-    margin-bottom: 0.9rem;
-    display: none; }
