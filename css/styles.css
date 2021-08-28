@@ -284,84 +284,99 @@ main div table tr td {
 
 /*FIN DE SHOP*/
 .contenedorgrid {
-  margin-left: 25%;
+  color: black;
+  padding-top: 2rem;
+  margin-left: 7.8125%;
   display: grid;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
-  justify-items: center;
-  grid-template-areas: "titulo titulo titulo" "texto1 texto1 imagen" "titulo2 titulo2 titulo2" "S1 S2 S3" "S4 S5 S6"; }
-
-.itemTitulo {
-  grid-area: titulo; }
-
-.itemImagen {
-  grid-area: imagen; }
-
-.itemTexto1 {
-  grid-area: texto1;
-  text-align: center;
-  max-width: 80rem; }
-
-/*Softwares*/
-.itemTitulo2 {
-  grid-area: titulo2; }
-
-.soft1 {
-  grid-area: S1;
-  text-align: center; }
-
-.soft2 {
-  grid-area: S2;
-  text-align: center; }
-  .soft2 img {
-    width: 25rem;
-    height: 25rem; }
-
-.soft3 {
-  grid-area: S3;
-  text-align: center; }
-
-.soft4 {
-  grid-area: S4;
-  text-align: center; }
-
-.soft5 {
-  grid-area: S5;
-  text-align: center; }
-  .soft5 img {
-    width: 23rem;
-    height: 23rem; }
-
-.soft6 {
-  grid-area: S6;
-  text-align: center; }
+  grid-template-areas: "texto1 texto1 botonimagen" "skill skill botonimagen" "clientes clientes clientes";
+  /*Softwares*/ }
+  .contenedorgrid .itemTexto1 {
+    grid-area: texto1;
+    max-width: 80rem; }
+  .contenedorgrid .flexContentSkills {
+    grid-area: skill;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "S1 S2 S3 S4" "S5 S6 S7 S8"; }
+    .contenedorgrid .flexContentSkills .itemTitulo2 {
+      grid-area: titulo2; }
+    .contenedorgrid .flexContentSkills .soft1 {
+      grid-area: S1;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft1 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft2 {
+      grid-area: S2;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft2 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft3 {
+      grid-area: S3;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft3 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft4 {
+      grid-area: S4;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft4 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft5 {
+      grid-area: S5;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft5 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft6 {
+      grid-area: S6;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft6 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft7 {
+      grid-area: S7;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft7 img {
+        width: 60%; }
+    .contenedorgrid .flexContentSkills .soft8 {
+      grid-area: S8;
+      text-align: inherit; }
+      .contenedorgrid .flexContentSkills .soft8 img {
+        width: 60%; }
+  .contenedorgrid .contenedorClientes {
+    grid-area: clientes; }
+  .contenedorgrid .contenedorBotoneImagen {
+    grid-area: botonimagen; }
+    .contenedorgrid .contenedorBotoneImagen .itemImagen {
+      margin-right: 5rem;
+      text-align: center; }
+      .contenedorgrid .contenedorBotoneImagen .itemImagen img {
+        width: 72.27273%;
+        height: 77.22222%; }
+    .contenedorgrid .contenedorBotoneImagen .buttonCv {
+      padding-top: 5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .contenedorgrid .contenedorBotoneImagen .buttonCv button {
+        margin: 1rem;
+        text-decoration: none;
+        background: #d96704;
+        box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+        border-radius: 60px;
+        width: 20vw;
+        height: 6.8rem;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 300%;
+        color: white; }
+        .contenedorgrid .contenedorBotoneImagen .buttonCv button:hover {
+          background: rgba(0, 0, 0, 0.71);
+          color: #d4d4d4; }
 
 /* FIN CSS ABOUT*/
-/* CSS Formulario Contacto*/
-/*formulario color de los rellenables*/
-.diseñarContact {
-  margin-left: 30%;
-  height: 95.5rem; }
-
-form {
-  background-color: #ffbb00;
-  font-weight: 700;
-  font-size: 150%;
-  text-align: center;
-  display: block;
-  margin: auto;
-  width: 80rem;
-  border: none;
-  color: white; }
-  form fieldset div input {
-    border: none;
-    background-color: #ffecb6; }
-  form fieldset div textarea {
-    border: none;
-    background-color: #ffecb6;
-    width: 60rem;
-    height: 30rem; }
-
 /*  inicio media querie de home*/
 @media screen and (min-width: 1940px) {
   .bodyhome {
@@ -493,3 +508,28 @@ form {
     width: 100vw;
     height: 90vh;
     /*iconos de rrss*/ } }
+
+/*menu*/
+.flexContainerNav2 {
+  position: fixed;
+  background: linear-gradient(180deg, rgba(255, 150, 1, 0.2) 0%, rgba(255, 184, 1, 0.2) 100%), #FFB801;
+  min-height: 100vh;
+  width: 10rem; }
+
+.menu_items2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem; }
+  .menu_items2 li {
+    position: relative;
+    margin-top: 3rem;
+    writing-mode: vertical-rl;
+    margin-right: 1.5rem; }
+    .menu_items2 li a {
+      font-family: roboto;
+      font-style: normal;
+      color: #ffffff;
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 2rem; }
