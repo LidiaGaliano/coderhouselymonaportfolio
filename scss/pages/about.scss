@@ -68,37 +68,3 @@
 }
 
 /* FIN CSS ABOUT*/
-
-/* CSS Formulario Contacto*/
-/*formulario color de los rellenables*/
-
-.diseñarContact {
-  margin-left: 30%;
-  height: 95.5rem;
-}
-
-form {
-  fieldset div {
-    input {
-      border: none;
-      background-color: #ffecb6;
-    }
-
-    textarea {
-      border: none;
-      background-color: #ffecb6;
-      width: 60rem;
-      height: 30rem;
-    }
-  }
-
-  background-color: #ffbb00;
-  font-weight: 700;
-  font-size: 150%;
-  text-align: center;
-  display: block;
-  margin: auto;
-  width: 80rem;
-  border: none;
-  color: white;
-}
