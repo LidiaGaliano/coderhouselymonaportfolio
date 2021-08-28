@@ -14,139 +14,114 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!--Side Bar-->
-    <div class="contenedorFlexible">
-      <header class="bloqueHeader">
-        <nav class="navegador">
-          <!--logo principal-->
-          <div class="navegador__logo">
-            <a href="/index.html">
-              <img
-                src="https://dl.dropboxusercontent.com/s/hcbcx2ioan65qo7/logo.png?dl=0"
-                alt="logo"
-              />
-            </a>
-          </div>
+  <body class="bodyhome">
+    <!-- navegador -->
+    <header>
+      <nav class="flexContainerNav">
+        <ul class="menu_items">
+          <a href="/index.html">
+            <img
+              src="/img/Logo amarillo.png"
+              class="logolymona"
+              alt="Logo Lymona "
+            />
+          </a>
+          <!--logo largo para menu de hamburgesa-->
+          <!-- <img src="./img/menu.png" class="logoMenuBurger" alt="logo largo" /> -->
 
-          <!--secciones web menu-->
+          <li>
+            <a href="./works.html"> WORKS</a>
+          </li>
+          <li>
+            <a href="./about.html"> ABOUT</a>
+          </li>
+          <li>
+            <a href="./shop.html"> SHOP</a>
+          </li>
+          <li>
+            <a href="./contact.html"> CONTACT</a>
+          </li>
+        </ul>
+        <!-- <img src="./img/menu.png" class="btn_menu" alt="icono menu" /> -->
+      </nav>
+    </header>
+    <!-- fin navegador -->
+
+    <!--Parte principal de la pagina-->
+    <main class="ContactMain">
+      <div class="flexContainerContact">
+        <div class="flexContainerContact__Info">
           <div>
-            <ul class="menu">
-              <li class="menu__section">
-                <a class="menu__section--colorLink" href="/index.html">HOME</a>
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li>
+                <span>
+                  <img src="/img/Recurso 13.png" alt="localización de Lymona" />
+                  Lorem ipsum dolor sit amet.
+                </span>
               </li>
-              <li class="menu__section">
-                <a class="menu__section--colorLink" href="works.html">WORKS</a>
+              <li>
+                <span
+                  ><img src="/img/Recurso 14.png" alt="e-mail Lymona" />
+                  ejemplo@gmail.com
+                </span>
               </li>
-              <li class="menu__section">
-                <a class="menu__section--colorLink" href="about.html">ABOUT</a>
-              </li>
-              <li class="menu__section">
-                <a class="menu__section--colorLink" href="shop.html">SHOP</a>
-              </li>
-              <li class="menu__section">
-                <a class="menu__section--colorLink" href="contact.html"
-                  >CONTACT</a
+              <li>
+                <span
+                  ><img src="/img/Recurso 15.png" alt="telefono lymona" /> +34
+                  859 56 65 68</span
                 >
               </li>
             </ul>
-          </div>
-        </nav>
-      </header>
+            <div class="rrss">
+              <a
+                href="https://www.linkedin.com/in/lymonagaliano/"
+                title="linkedin"
+              >
+                <img src="/img/Recurso 9.png" alt="linkedin" />
+              </a>
+              <a href="https://www.instagram.com/lymonart/" title="instagram">
+                <img src="/img/Recurso 8.png" alt="instagram" />
+              </a>
 
-      <!--Parte principal de la pagina-->
-      <main class="diseñarContact">
-        <!--Titulo pagina-->
-        <h1>Contact me!</h1>
-        <!--Formulario de contacto-->
-        <form action="">
-          <!--Cajon sin borde-->
-          <fieldset style="border: none">
-            <!---Pestaña solicitud nombre-->
-            <div>
-              <label for="YourName">Your Name</label>
-              <br />
-              <input type="text" id="YourName" name="YourName" />
+              <a href="https://www.artstation.com/lymonart" title="mail">
+                <img src="/img/Recurso 6.png" alt="Artstation" />
+              </a>
             </div>
-            <br />
-            <!---Pestaña solicitud email-->
-            <div>
-              <label for="email">Your email</label>
-              <br />
-              <input type="email" name="email" id="email" />
+          </div>
+        </div>
+        <div class="flexContainerContact__Form">
+          <h2>Send a Message</h2>
+          <div class="formBox">
+            <div class="inputBox w50">
+              <input type="text" required />
+              <span>First Name</span>
             </div>
-            <br />
-            <!---Radio bottons para asunto-->
-            <div>
-              <label for="Subject">Info</label>
-              <input type="radio" name="Subject" id="Info" />
-              <label for="Subject">Job Proporsal</label>
-              <input type="radio" name="Subject" id="Job Proporsal" />
-              <label for="Subject">Others</label>
-              <input type="radio" name="Subject" id="Others" />
+            <div class="inputBox w50">
+              <input type="text" required />
+              <span>Last Name</span>
             </div>
-            <!--Desplegable de opciones-->
-            <div>
-              <label for="Style">Choose a option</label>
-              <select name="Style" id="Style">
-                <option value="Illustration">Illustration</option>
-                <option value="Desing">Desing</option>
-                <option value="3D art">3D art</option>
-                <option value="Others">Others</option>
-              </select>
+            <div class="inputBox w50">
+              <input type="email" required />
+              <span> Email </span>
             </div>
-            <br />
-            <!---Pestaña texto-->
-            <div>
-              <label for="text">Type your mesagge here</label>
-              <br />
-              <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            <div class="inputBox w50">
+              <input type="text" required />
+              <span>Mobile Number</span>
             </div>
-            <!--Checkeo de terminos y condiciones-->
-            <div>
-              <label for="accept">Accept Terms & Conditions</label>
-              <input type="checkbox" name="accept" value="1" />
+            <div class="inputBox w100">
+              <textarea required></textarea>
+              <span>Write your message here...</span>
             </div>
-            <br />
-            <!---Botones de acciones-->
-            <div>
-              <input type="reset" value="Clean all" />
-              <input type="submit" value="Send Message" />
+            <div class="inputBox w100">
+              <input type="submit" value="Send" />
             </div>
-          </fieldset>
-        </form>
-      </main>
-    </div>
-    <!--Pie de pagina-->
-    <footer class="diseñoFotter">
-      <h4>Lymona© 2021</h4>
-      <!--iconos rrss esquina superior derecha-->
-      <div>
-        <a href="https://www.instagram.com/lymonart/" title="instagram">
-          <img
-            src="https://image.flaticon.com/icons/png/128/725/725339.png"
-            alt="instagram"
-          />
-        </a>
-        <a href="https://www.linkedin.com/in/lymonagaliano/" title="linkedin">
-          <img
-            src="https://img.icons8.com/ios/452/linkedin.png"
-            alt="linkedin"
-          />
-        </a>
-        <a href="https://www.artstation.com/lymonart" title="mail">
-          <img
-            src="https://icon-library.com/images/27_artstation_logo_logos-512.png"
-            alt="Artstation"
-          />
-        </a>
-        <a href="mailto:lymonagaliano@gmail.com" title="mail">
-          <img
-            src="https://image.flaticon.com/icons/png/128/2258/2258541.png"
-            alt="mail"
-          />
-        </a>
+          </div>
+        </div>
       </div>
-    </footer>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer class="containerFooter"></footer>
   </body>
 </html>
