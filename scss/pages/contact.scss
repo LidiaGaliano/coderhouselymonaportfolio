@@ -87,17 +87,19 @@
       0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0337375);
 
     h2 {
-      margin: 7% 20%;
-      font-size: 3vw;
+      margin: 5% 25.6%;
+      font-size: 2.5vw;
+      color: black;
     }
     .formBox {
       position: relative;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      color: rgb(0, 0, 0);
 
-      margin-left: 139px;
-      width: 585px;
+      margin-left: 15%;
+      width: 70%;
       height: 315px;
 
       .inputBox {
@@ -109,36 +111,134 @@
       }
       .w100 {
         width: 100%;
+        left: 10px;
       }
 
       input {
-        resize: none;
         width: 100%;
-        padding: 5px, 0;
+        height: 180%;
+        resize: none;
         font-size: 18px;
-        font-weight: 300;
-        color: #333;
+        font-weight: 500;
+        color: black;
         border: none;
         outline: none;
         border-bottom: 1px solid #777;
+        font-family: roboto;
+
+        &:focus ~ span {
+          transform: translateY(-20px);
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
+        &:valid ~ span {
+          transform: translateY(-20px);
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
       }
       textarea {
         resize: none;
         width: 100%;
+        height: 150%;
         padding: 5px, 0;
+        font-family: roboto;
         font-size: 20px;
-        font-weight: 300;
-        color: #333;
+        font-weight: 500;
+        color: black;
         border: none;
         outline: none;
         border-bottom: 1px solid #777;
-        height: 100px;
+
+        &:focus ~ span {
+          transform: translateY(-20px);
+          letter-spacing: 1px;
+          font-size: 18px;
+          font-weight: 400;
+        }
+        &:valid ~ span {
+          transform: translateY(-20px);
+          letter-spacing: 1px;
+          font-size: 18px;
+          font-weight: 400;
+        }
       }
       span {
-        left: 80px;
-        padding: 25px 0;
-        font-size: 20px;
+        position: absolute;
+        left: 0;
+
+        font-size: 2.5rem;
+        pointer-events: none;
+        font-weight: 300;
+        transition: 0.3s;
       }
+    }
+    & .inputBox [type="submit"] {
+      position: relative;
+      cursor: pointer;
+      background: #d96704;
+      color: white;
+      font-family: roboto;
+      font-weight: 500;
+      border-radius: 3rem;
+      box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+        0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+        0px 0.931014px 2.06153px rgba(0, 0, 0, 0.0484671);
+      max-width: 130px;
+      padding: 2px;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.835);
+      }
+    }
+  }
+}
+// responsive queries
+@media (max-width: 1400px) {
+  .flexContainerContact {
+    width: 80%;
+    min-width: auto;
+    margin: 20px;
+    margin-top: 90px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.0191734);
+
+    .flexContainerContact__Info {
+      top: 0;
+      height: 550px;
+      position: relative;
+      box-shadow: none;
+    }
+    .flexContainerContact__Form {
+      position: relative;
+      width: calc(100%-350px);
+      padding-left: 0;
+      margin-left: 0;
+      padding: 40px;
+      height: 550px;
+      box-shadow: none;
+
+      .formBox span {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1017px) {
+  .flexContainerContact {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .flexContainerContact__Form {
+      width: 100%;
+      height: auto;
+    }
+
+    .flexContainerContact__Info {
+      width: 100%;
+      height: auto;
     }
   }
 }
