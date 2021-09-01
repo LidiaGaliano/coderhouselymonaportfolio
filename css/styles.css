@@ -127,7 +127,6 @@ footer div a {
   .flexContainerFooter__politicas select,
   .flexContainerFooter__politicas textarea {
     text-align: left;
-    font-family: "Roboto", sans-serif;
     margin: 0;
     line-height: inherit; }
   .flexContainerFooter__politicas a {
