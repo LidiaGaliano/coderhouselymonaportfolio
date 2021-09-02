@@ -273,35 +273,93 @@ svg {
   vertical-align: 10%; }
 
 /* FIN CSS WORKS*/
-/*CSS SHOP*/
-/*Margen SHOP*/
-.diseñarTienda {
-  margin-left: 25%;
-  height: 95.5rem; }
-
-.margenTodoContenido {
+.shopMain {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 10%; }
+  .shopMain .productOne {
+    display: flex;
+    flex-direction: columm;
+    height: 700px;
+    width: 500px;
+    margin-top: 7rem;
+    background: blue;
+    position: relative; }
+    .shopMain .productOne h2 {
+      text-align: center;
+      padding: 1rem;
+      margin-left: 19rem;
+      font-weight: 800; }
+    .shopMain .productOne .containerPrints {
+      display: flex;
+      padding: 7rem 3rem 0 3rem;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; }
+    .shopMain .productOne .descripciones {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      justify-content: center;
+      padding-top: 4rem; }
+  .shopMain .productTwo {
+    display: flex;
+    flex-direction: columm;
+    height: 700px;
+    width: 500px;
+    margin-top: 7rem;
+    background: Green;
+    position: relative; }
+    .shopMain .productTwo h2 {
+      text-align: center;
+      padding: 1rem;
+      margin-left: 19rem;
+      font-weight: 800; }
+    .shopMain .productTwo .containerArttoy {
+      display: flex;
+      padding: 7rem 3rem 0 3rem;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; }
+    .shopMain .productTwo .descripciones {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      justify-content: center;
+      padding-top: 4rem; }
+  .shopMain .productThree {
+    display: flex;
+    flex-direction: columm;
+    height: 700px;
+    width: 500px;
+    margin-top: 7rem;
+    background: red;
+    position: relative; }
+    .shopMain .productThree h2 {
+      text-align: center;
+      padding: 1rem;
+      margin-left: 19rem;
+      font-weight: 800; }
+    .shopMain .productThree .containerPrintsTwo {
+      display: flex;
+      padding: 7rem 3rem 0 3rem;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; }
+    .shopMain .productThree .descripciones {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+      justify-content: center;
+      padding-top: 4rem; }
 
-/*SHOP diseño*/
-.ordentienda {
-  padding: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 200%;
-  display: inline-block;
-  text-align: center; }
-
-/*Modificacion texto en tabla SHOP*/
-main div table tr th {
-  color: #ffffff;
-  background-color: #ffbb00bd;
-  padding: 0.5rem; }
-
-main div table tr td {
-  padding: 1rem; }
-
-/*FIN DE SHOP*/
 .contenedorgrid {
   color: black;
   padding-top: 2rem;
