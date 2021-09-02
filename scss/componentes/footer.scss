@@ -9,19 +9,30 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-around;
-  margin-left: 8rem;
-  width: 94%;
+  margin-left: 10rem;
+  width: 94.77%;
   height: 20rem;
   background-color: #231f20;
 }
 
 .flexContainerFooter__politicas {
-  text-align: left;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 0.6rem;
   order: 1;
+
+  //Editar fuente Botones Boostrap
+  .flexContainerFooter__politicas button,
+  h5,
+  input,
+  optgroup,
+  select,
+  textarea {
+    text-align: left;
+    margin: 0;
+    line-height: inherit;
+  }
 
   a {
     color: #ffffff;
@@ -49,14 +60,17 @@
   }
 }
 
-.btn-primary {
+.btn {
   color: #fff;
-  background-color: black;
-  border-color: black;
 
   &:hover {
     color: #fff;
-    background-color: black;
-    border-color: black;
+    border-color: none;
+  }
+
+  .btn-check:focus + &,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
   }
 }
