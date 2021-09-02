@@ -25,7 +25,7 @@
     margin: 0.4em;
 
     &:hover {
-      background-color: 626262;
+      background-color: #626262;
     }
   }
 }
@@ -56,4 +56,8 @@
   }
 }
 
+img,
+svg {
+  vertical-align: 10%;
+}
 /* FIN CSS WORKS*/
