@@ -2,11 +2,13 @@
 /*Reseteo*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*unidad de medida responsive*/
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 /*estilos texto*/
 h1 {
@@ -14,69 +16,82 @@ h1 {
   font-weight: 900;
   font-size: 500%;
   padding: 3rem;
-  text-align: center; }
+  text-align: center;
+}
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 300%;
-  line-height: 7rem; }
+  line-height: 7rem;
+}
 
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 200%;
-  line-height: 3rem; }
+  line-height: 3rem;
+}
 
 h4 {
   font-family: "Roboto", sans-serif;
   font-size: 150%;
-  line-height: 3rem; }
+  line-height: 3rem;
+}
 
 p {
   font-family: "Roboto", sans-serif;
   font-size: 200%;
   line-height: 3rem;
-  text-align: left; }
+  text-align: left;
+}
 
 /*estilo decorativo de todas las listas*/
 li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 /*Body color del texto*/
 body {
   color: #ffbb00;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 main {
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 /*menu*/
 .flexContainerNav {
   position: absolute;
   background-color: white;
   min-height: 100vh;
-  width: 10rem; }
+  width: 10rem;
+}
 
 .menu_items {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 2rem; }
-  .menu_items li {
-    position: relative;
-    margin-top: 3rem;
-    writing-mode: vertical-rl;
-    margin-right: 1.5rem; }
-    .menu_items li a {
-      font-family: roboto;
-      font-style: normal;
-      color: #ffbb00;
-      font-size: 3rem;
-      font-weight: bold;
-      padding: 2rem; }
+  padding: 2rem;
+}
+.menu_items li {
+  position: relative;
+  margin-top: 3rem;
+  writing-mode: vertical-rl;
+  margin-right: 1.5rem;
+}
+.menu_items li a {
+  font-family: roboto;
+  font-style: normal;
+  color: #ffbb00;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+}
 
 /*CSS FOOTER*/
 /*diseño footer*/
@@ -88,16 +103,20 @@ main {
   align-items: center;
   align-content: center;
   flex-direction: row;
-  flex-wrap: nowrap; }
-  .diseñoFotter img {
-    max-width: 20%;
-    height: auto; }
+  flex-wrap: nowrap;
+}
+.diseñoFotter img {
+  max-width: 20%;
+  height: auto;
+}
 
 /*iconos de rrss*/
 footer div a {
-  text-decoration: none; }
-  footer div a img {
-    padding: 0.7rem; }
+  text-decoration: none;
+}
+footer div a img {
+  padding: 0.7rem;
+}
 
 /*CSS NUEVO FOOTER*/
 .flexContainerFooter {
@@ -112,57 +131,69 @@ footer div a {
   margin-left: 10rem;
   width: 94.77%;
   height: 20rem;
-  background-color: #231f20; }
+  background-color: #231f20;
+}
 
 .flexContainerFooter__politicas {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 0.6rem;
-  order: 1; }
-  .flexContainerFooter__politicas .flexContainerFooter__politicas button,
-  .flexContainerFooter__politicas h5,
-  .flexContainerFooter__politicas input,
-  .flexContainerFooter__politicas optgroup,
-  .flexContainerFooter__politicas select,
-  .flexContainerFooter__politicas textarea {
-    text-align: left;
-    margin: 0;
-    line-height: inherit; }
-  .flexContainerFooter__politicas a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-size: 150%;
-    font-weight: 700; }
+  order: 1;
+}
+.flexContainerFooter__politicas .flexContainerFooter__politicas button,
+.flexContainerFooter__politicas h5,
+.flexContainerFooter__politicas input,
+.flexContainerFooter__politicas optgroup,
+.flexContainerFooter__politicas select,
+.flexContainerFooter__politicas textarea {
+  text-align: left;
+  margin: 0;
+  line-height: inherit;
+}
+.flexContainerFooter__politicas a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 150%;
+  font-weight: 700;
+}
 
 .flexContainerFooter__logoGrande {
   width: 46.75rem;
-  order: 2; }
+  order: 2;
+}
 
 .flexContainerFooter__redesycopy {
   display: block;
-  order: 3; }
-  .flexContainerFooter__redesycopy h4 {
-    font-weight: 700;
-    padding-right: 0.3rem;
-    text-align: right;
-    color: #ffffff; }
+  order: 3;
+}
+.flexContainerFooter__redesycopy h4 {
+  font-weight: 700;
+  padding-right: 0.3rem;
+  text-align: right;
+  color: #ffffff;
+}
 
 .btn {
-  color: #fff; }
-  .btn:hover {
-    color: #fff;
-    border-color: none; }
-  .btn-check:focus + .btn, .btn:focus {
-    outline: 0;
-    box-shadow: none; }
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+  border-color: none;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
 
 /* home*/
 .bodyhome {
   background: fixed linear-gradient(0deg, #ffbb00 32%, #ff9500 100%);
   min-height: 100%;
-  min-width: 100vw; }
+  min-width: 100vw;
+}
 
 /*CONTENIDO HOME MAIN*/
 /*Imagen,texto  y botones*/
@@ -173,58 +204,69 @@ footer div a {
   justify-content: center;
   align-items: center;
   margin-left: 7rem;
-  /*logo media queries movil*/ }
-  .flexContainerMain .logoPrincipal {
-    order: 2;
-    margin: 5rem;
-    flex-basis: 25.62162%; }
-  .flexContainerMain .logoMobile {
-    display: none; }
-  .flexContainerMain .flexContainerMain__textoHome {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    order: 1;
-    max-height: 244px;
-    max-width: 851px;
-    flex-basis: 45.94595%;
-    margin-left: 10px; }
-    .flexContainerMain .flexContainerMain__textoHome h1 {
-      color: white;
-      font-size: 600%;
-      font-weight: 700;
-      margin-bottom: 0.9rem;
-      min-width: 800px; }
-    .flexContainerMain .flexContainerMain__textoHome h2 {
-      color: white;
-      font-size: 356%;
-      font-weight: 700;
-      margin-bottom: 0.9rem;
-      display: none; }
+  /*logo media queries movil*/
+}
+.flexContainerMain .logoPrincipal {
+  order: 2;
+  margin: 5rem;
+  flex-basis: 25.62162%;
+}
+.flexContainerMain .logoMobile {
+  display: none;
+}
+.flexContainerMain .flexContainerMain__textoHome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+  max-height: 244px;
+  max-width: 851px;
+  flex-basis: 45.94595%;
+  margin-left: 10px;
+}
+.flexContainerMain .flexContainerMain__textoHome h1 {
+  color: white;
+  font-size: 600%;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  min-width: 800px;
+}
+.flexContainerMain .flexContainerMain__textoHome h2 {
+  color: white;
+  font-size: 356%;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  display: none;
+}
 
 .homeButton {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  justify-items: center; }
-  .homeButton button {
-    margin: 1rem;
-    text-decoration: none;
-    background: #d96704;
-    box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
-    border-radius: 30px;
-    width: 20vw;
-    height: 6.8rem;
-    border: none;
-    font-size: 1.5vw;
-    color: white;
-    font-weight: 500; }
-    .homeButton button:hover {
-      background: rgba(0, 0, 0, 0.71);
-      color: #d4d4d4; }
+  justify-items: center;
+}
+.homeButton button {
+  margin: 1rem;
+  text-decoration: none;
+  background: #d96704;
+  box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+    0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+    0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+  border-radius: 30px;
+  width: 20vw;
+  height: 6.8rem;
+  border: none;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: 500;
+}
+.homeButton button:hover {
+  background: rgba(0, 0, 0, 0.71);
+  color: #d4d4d4;
+}
 
 /*CSS WORKS*/
 /*botones de filtro works*/
@@ -234,43 +276,52 @@ footer div a {
   margin-left: 20rem;
   justify-content: left;
   display: flex;
-  flex-wrap: nowrap; }
-  .botonesWorks h5 {
-    text-align: center; }
-  .botonesWorks button {
-    border-radius: 30px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    color: white;
-    border: none;
-    background-color: #ffbb00;
-    padding: 1rem;
-    margin: 0.4em; }
-    .botonesWorks button:hover {
-      background-color: #626262; }
+  flex-wrap: nowrap;
+}
+.botonesWorks h5 {
+  text-align: center;
+}
+.botonesWorks button {
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+  border: none;
+  background-color: #ffbb00;
+  padding: 1rem;
+  margin: 0.4em;
+}
+.botonesWorks button:hover {
+  background-color: #626262;
+}
 
 /*Galleria Bootstrap*/
 .container-fluid {
   max-width: 90%;
-  padding-left: 10rem; }
+  padding-left: 10rem;
+}
 
 .row {
   display: flex;
-  flex-wrap: wrap; }
-  .row .column {
-    flex: 25rem;
-    width: auto;
-    overflow: hidden;
-    padding: 0.5rem;
-    height: 100%; }
-    .row .column img {
-      margin-top: 1rem;
-      width: 100%;
-      height: 100%; }
+  flex-wrap: wrap;
+}
+.row .column {
+  flex: 25rem;
+  width: auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  height: 100%;
+}
+.row .column img {
+  margin-top: 1rem;
+  width: 100%;
+  height: 100%;
+}
 
 img,
 svg {
-  vertical-align: 10%; }
+  vertical-align: 10%;
+}
 
 /* FIN CSS WORKS*/
 .shopMain {
@@ -280,85 +331,98 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-left: 10%; }
-  .shopMain .productOne {
-    display: flex;
-    flex-direction: columm;
-    height: 700px;
-    width: 500px;
-    margin-top: 7rem;
-    background: blue;
-    position: relative; }
-    .shopMain .productOne h2 {
-      text-align: center;
-      padding: 1rem;
-      margin-left: 19rem;
-      font-weight: 800; }
-    .shopMain .productOne .containerPrints {
-      display: flex;
-      padding: 7rem 3rem 0 3rem;
-      position: absolute;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem; }
-    .shopMain .productOne .descripciones {
-      display: flex;
-      flex-direction: row;
-      gap: 4rem;
-      justify-content: center;
-      padding-top: 4rem; }
-  .shopMain .productTwo {
-    display: flex;
-    flex-direction: columm;
-    height: 700px;
-    width: 500px;
-    margin-top: 7rem;
-    background: Green;
-    position: relative; }
-    .shopMain .productTwo h2 {
-      text-align: center;
-      padding: 1rem;
-      margin-left: 19rem;
-      font-weight: 800; }
-    .shopMain .productTwo .containerArttoy {
-      display: flex;
-      padding: 7rem 3rem 0 3rem;
-      position: absolute;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem; }
-    .shopMain .productTwo .descripciones {
-      display: flex;
-      flex-direction: row;
-      gap: 4rem;
-      justify-content: center;
-      padding-top: 4rem; }
-  .shopMain .productThree {
-    display: flex;
-    flex-direction: columm;
-    height: 700px;
-    width: 500px;
-    margin-top: 7rem;
-    background: red;
-    position: relative; }
-    .shopMain .productThree h2 {
-      text-align: center;
-      padding: 1rem;
-      margin-left: 19rem;
-      font-weight: 800; }
-    .shopMain .productThree .containerPrintsTwo {
-      display: flex;
-      padding: 7rem 3rem 0 3rem;
-      position: absolute;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem; }
-    .shopMain .productThree .descripciones {
-      display: flex;
-      flex-direction: row;
-      gap: 4rem;
-      justify-content: center;
-      padding-top: 4rem; }
+  margin-left: 10%;
+}
+.shopMain .productOne {
+  display: flex;
+  flex-direction: columm;
+  height: 700px;
+  width: 500px;
+  margin-top: 7rem;
+  background: blue;
+  position: relative;
+}
+.shopMain .productOne h2 {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 19rem;
+  font-weight: 800;
+}
+.shopMain .productOne .containerPrints {
+  display: flex;
+  padding: 7rem 3rem 0 3rem;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.shopMain .productOne .descripciones {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.shopMain .productTwo {
+  display: flex;
+  flex-direction: columm;
+  height: 700px;
+  width: 500px;
+  margin-top: 7rem;
+  background: Green;
+  position: relative;
+}
+.shopMain .productTwo h2 {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 19rem;
+  font-weight: 800;
+}
+.shopMain .productTwo .containerArttoy {
+  display: flex;
+  padding: 7rem 3rem 0 3rem;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.shopMain .productTwo .descripciones {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.shopMain .productThree {
+  display: flex;
+  flex-direction: columm;
+  height: 700px;
+  width: 500px;
+  margin-top: 7rem;
+  background: red;
+  position: relative;
+}
+.shopMain .productThree h2 {
+  text-align: center;
+  padding: 1rem;
+  margin-left: 19rem;
+  font-weight: 800;
+}
+.shopMain .productThree .containerPrintsTwo {
+  display: flex;
+  padding: 7rem 3rem 0 3rem;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.shopMain .productThree .descripciones {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
 
 .contenedorgrid {
   color: black;
@@ -368,97 +432,127 @@ svg {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-areas: "texto1 texto1 botonimagen" "skill skill botonimagen" "clientes clientes clientes";
-  /*Softwares*/ }
-  .contenedorgrid .itemTexto1 {
-    grid-area: texto1;
-    max-width: 80rem; }
-  .contenedorgrid .flexContentSkills {
-    grid-area: skill;
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-    grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "S1 S2 S3 S4" "S5 S6 S7 S8"; }
-    .contenedorgrid .flexContentSkills .itemTitulo2 {
-      grid-area: titulo2; }
-    .contenedorgrid .flexContentSkills .soft1 {
-      grid-area: S1;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft1 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft2 {
-      grid-area: S2;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft2 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft3 {
-      grid-area: S3;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft3 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft4 {
-      grid-area: S4;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft4 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft5 {
-      grid-area: S5;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft5 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft6 {
-      grid-area: S6;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft6 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft7 {
-      grid-area: S7;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft7 img {
-        width: 60%; }
-    .contenedorgrid .flexContentSkills .soft8 {
-      grid-area: S8;
-      text-align: inherit; }
-      .contenedorgrid .flexContentSkills .soft8 img {
-        width: 60%; }
-  .contenedorgrid .contenedorClientes {
-    grid-area: clientes; }
-  .contenedorgrid .contenedorBotoneImagen {
-    grid-area: botonimagen; }
-    .contenedorgrid .contenedorBotoneImagen .itemImagen {
-      margin-right: 5rem;
-      text-align: center; }
-      .contenedorgrid .contenedorBotoneImagen .itemImagen img {
-        width: 72.27273%;
-        height: 77.22222%; }
-    .contenedorgrid .contenedorBotoneImagen .buttonCv {
-      padding-top: 5rem;
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      .contenedorgrid .contenedorBotoneImagen .buttonCv button {
-        margin: 1rem;
-        text-decoration: none;
-        background: #d96704;
-        box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
-        border-radius: 60px;
-        width: 20vw;
-        height: 6.8rem;
-        border: none;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-size: 300%;
-        color: white; }
-        .contenedorgrid .contenedorBotoneImagen .buttonCv button:hover {
-          background: rgba(0, 0, 0, 0.71);
-          color: #d4d4d4; }
+  /*Softwares*/
+}
+.contenedorgrid .itemTexto1 {
+  grid-area: texto1;
+  max-width: 80rem;
+}
+.contenedorgrid .flexContentSkills {
+  grid-area: skill;
+  display: grid;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "S1 S2 S3 S4" "S5 S6 S7 S8";
+}
+.contenedorgrid .flexContentSkills .itemTitulo2 {
+  grid-area: titulo2;
+}
+.contenedorgrid .flexContentSkills .soft1 {
+  grid-area: S1;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft1 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft2 {
+  grid-area: S2;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft2 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft3 {
+  grid-area: S3;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft3 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft4 {
+  grid-area: S4;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft4 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft5 {
+  grid-area: S5;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft5 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft6 {
+  grid-area: S6;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft6 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft7 {
+  grid-area: S7;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft7 img {
+  width: 60%;
+}
+.contenedorgrid .flexContentSkills .soft8 {
+  grid-area: S8;
+  text-align: inherit;
+}
+.contenedorgrid .flexContentSkills .soft8 img {
+  width: 60%;
+}
+.contenedorgrid .contenedorClientes {
+  grid-area: clientes;
+}
+.contenedorgrid .contenedorBotoneImagen {
+  grid-area: botonimagen;
+}
+.contenedorgrid .contenedorBotoneImagen .itemImagen {
+  margin-right: 5rem;
+  text-align: center;
+}
+.contenedorgrid .contenedorBotoneImagen .itemImagen img {
+  width: 72.27273%;
+  height: 77.22222%;
+}
+.contenedorgrid .contenedorBotoneImagen .buttonCv {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contenedorgrid .contenedorBotoneImagen .buttonCv button {
+  margin: 1rem;
+  text-decoration: none;
+  background: #d96704;
+  box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+    0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+    0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+  border-radius: 60px;
+  width: 20vw;
+  height: 6.8rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 300%;
+  color: white;
+}
+.contenedorgrid .contenedorBotoneImagen .buttonCv button:hover {
+  background: rgba(0, 0, 0, 0.71);
+  color: #d4d4d4;
+}
 
 /* FIN CSS ABOUT*/
 .ContactMain {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 .flexContainerContact {
   position: relative;
@@ -466,140 +560,189 @@ svg {
   min-height: 700px;
   display: flex;
   z-index: 1000;
-  margin-left: 6.77083%; }
-  .flexContainerContact .flexContainerContact__Info {
-    position: absolute;
-    top: 7.29167%;
-    width: 350px;
-    height: 500px;
-    background: black;
-    z-index: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08), 0px 50.0488px 40.0391px rgba(0, 0, 0, 0.0608266), 0px 30.1471px 24.1177px rgba(0, 0, 0, 0.0521271), 0px 19.3198px 15.4559px rgba(0, 0, 0, 0.0456716), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.04), 0px 7.88218px 6.30574px rgba(0, 0, 0, 0.0343284), 0px 4.5288px 3.62304px rgba(0, 0, 0, 0.0278729), 0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0191734); }
-  .flexContainerContact .flexContainerContact__Info h2 {
-    color: white;
-    font-size: 36px; }
-  .flexContainerContact .rrss {
-    position: relative;
-    top: 70%;
-    left: 14%; }
-    .flexContainerContact .rrss.rrss a {
-      padding-left: 7%; }
-  .flexContainerContact .info {
-    position: relative;
-    margin: 20px 0; }
-    .flexContainerContact .info li {
-      position: relative;
-      display: flex;
-      margin: 20px 0;
-      cursor: pointer;
-      align-items: flex-start; }
-      .flexContainerContact .info li span:nth-child(1) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-        min-width: 10%;
-        font-size: 2.2rem;
-        color: white; }
-      .flexContainerContact .info li span img {
-        padding-right: 10%; }
-  .flexContainerContact .flexContainerContact__Form {
-    position: absolute;
-    padding: 70px, 50px;
-    padding-left: 250px;
-    margin-left: 150px;
-    width: 72%;
-    height: 100%;
-    background: white;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.12), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0715329), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.06), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0337375); }
-    .flexContainerContact .flexContainerContact__Form h2 {
-      margin: 5% 25.6%;
-      font-size: 2.5vw;
-      color: black; }
-    .flexContainerContact .flexContainerContact__Form .formBox {
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      color: black;
-      margin-left: 15%;
-      width: 70%;
-      height: 315px; }
-      .flexContainerContact .flexContainerContact__Form .formBox .inputBox {
-        position: relative;
-        margin-bottom: 100px; }
-      .flexContainerContact .flexContainerContact__Form .formBox .w50 {
-        width: 45%; }
-      .flexContainerContact .flexContainerContact__Form .formBox .w100 {
-        width: 100%;
-        left: 10px; }
-      .flexContainerContact .flexContainerContact__Form .formBox input {
-        width: 100%;
-        height: 180%;
-        resize: none;
-        font-size: 18px;
-        font-weight: 500;
-        color: black;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid #777;
-        font-family: roboto; }
-        .flexContainerContact .flexContainerContact__Form .formBox input:focus ~ span {
-          transform: translateY(-20px);
-          font-size: 18px;
-          letter-spacing: 1px;
-          font-weight: 400; }
-        .flexContainerContact .flexContainerContact__Form .formBox input:valid ~ span {
-          transform: translateY(-20px);
-          font-size: 18px;
-          letter-spacing: 1px;
-          font-weight: 400; }
-      .flexContainerContact .flexContainerContact__Form .formBox textarea {
-        resize: none;
-        width: 100%;
-        height: 150%;
-        padding: 5px, 0;
-        font-family: roboto;
-        font-size: 20px;
-        font-weight: 500;
-        color: black;
-        border: none;
-        outline: none;
-        border-bottom: 1px solid #777; }
-        .flexContainerContact .flexContainerContact__Form .formBox textarea:focus ~ span {
-          transform: translateY(-20px);
-          letter-spacing: 1px;
-          font-size: 18px;
-          font-weight: 400; }
-        .flexContainerContact .flexContainerContact__Form .formBox textarea:valid ~ span {
-          transform: translateY(-20px);
-          letter-spacing: 1px;
-          font-size: 18px;
-          font-weight: 400; }
-      .flexContainerContact .flexContainerContact__Form .formBox span {
-        position: absolute;
-        left: 0;
-        font-size: 2.5rem;
-        pointer-events: none;
-        font-weight: 300;
-        transition: 0.3s; }
-    .flexContainerContact .flexContainerContact__Form .inputBox [type="submit"] {
-      position: relative;
-      cursor: pointer;
-      background: #d96704;
-      color: white;
-      font-family: roboto;
-      font-weight: 500;
-      border-radius: 3rem;
-      box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
-      max-width: 130px;
-      padding: 2px; }
-      .flexContainerContact .flexContainerContact__Form .inputBox [type="submit"]:hover {
-        background: rgba(0, 0, 0, 0.835); }
+  margin-left: 6.77083%;
+}
+.flexContainerContact .flexContainerContact__Info {
+  position: absolute;
+  top: 7.29167%;
+  width: 350px;
+  height: 500px;
+  background: black;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.08),
+    0px 50.0488px 40.0391px rgba(0, 0, 0, 0.0608266),
+    0px 30.1471px 24.1177px rgba(0, 0, 0, 0.0521271),
+    0px 19.3198px 15.4559px rgba(0, 0, 0, 0.0456716),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.04),
+    0px 7.88218px 6.30574px rgba(0, 0, 0, 0.0343284),
+    0px 4.5288px 3.62304px rgba(0, 0, 0, 0.0278729),
+    0px 1.99324px 1.59459px rgba(0, 0, 0, 0.0191734);
+}
+.flexContainerContact .flexContainerContact__Info h2 {
+  color: white;
+  font-size: 36px;
+}
+.flexContainerContact .rrss {
+  position: relative;
+  top: 70%;
+  left: 14%;
+}
+.flexContainerContact .rrss.rrss a {
+  padding-left: 7%;
+}
+.flexContainerContact .info {
+  position: relative;
+  margin: 20px 0;
+}
+.flexContainerContact .info li {
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+.flexContainerContact .info li span:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  min-width: 10%;
+  font-size: 2.2rem;
+  color: white;
+}
+.flexContainerContact .info li span img {
+  padding-right: 10%;
+}
+.flexContainerContact .flexContainerContact__Form {
+  position: absolute;
+  padding: 70px, 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: 72%;
+  height: 100%;
+  background: white;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.12),
+    0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0862625),
+    0px 22.3363px 17.869px rgba(0, 0, 0, 0.0715329),
+    0px 12.5216px 10.0172px rgba(0, 0, 0, 0.06),
+    0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0484671),
+    0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0337375);
+}
+.flexContainerContact .flexContainerContact__Form h2 {
+  margin: 5% 25.6%;
+  font-size: 2.5vw;
+  color: black;
+}
+.flexContainerContact .flexContainerContact__Form .formBox {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+  margin-left: 15%;
+  width: 70%;
+  height: 315px;
+}
+.flexContainerContact .flexContainerContact__Form .formBox .inputBox {
+  position: relative;
+  margin-bottom: 100px;
+}
+.flexContainerContact .flexContainerContact__Form .formBox .w50 {
+  width: 45%;
+}
+.flexContainerContact .flexContainerContact__Form .formBox .w100 {
+  width: 100%;
+  left: 10px;
+}
+.flexContainerContact .flexContainerContact__Form .formBox input {
+  width: 100%;
+  height: 180%;
+  resize: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+  font-family: roboto;
+}
+.flexContainerContact .flexContainerContact__Form .formBox input:focus ~ span {
+  transform: translateY(-20px);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.flexContainerContact .flexContainerContact__Form .formBox input:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.flexContainerContact .flexContainerContact__Form .formBox textarea {
+  resize: none;
+  width: 100%;
+  height: 150%;
+  padding: 5px, 0;
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.flexContainerContact
+  .flexContainerContact__Form
+  .formBox
+  textarea:focus
+  ~ span {
+  transform: translateY(-20px);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.flexContainerContact
+  .flexContainerContact__Form
+  .formBox
+  textarea:valid
+  ~ span {
+  transform: translateY(-20px);
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.flexContainerContact .flexContainerContact__Form .formBox span {
+  position: absolute;
+  left: 0;
+  font-size: 2.5rem;
+  pointer-events: none;
+  font-weight: 300;
+  transition: 0.3s;
+}
+.flexContainerContact .flexContainerContact__Form .inputBox [type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background: #d96704;
+  color: white;
+  font-family: roboto;
+  font-weight: 500;
+  border-radius: 3rem;
+  box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+    0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+    0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+  max-width: 130px;
+  padding: 2px;
+}
+.flexContainerContact
+  .flexContainerContact__Form
+  .inputBox
+  [type="submit"]:hover {
+  background: rgba(0, 0, 0, 0.835);
+}
 
 @media (max-width: 1400px) {
   .flexContainerContact {
@@ -607,39 +750,49 @@ svg {
     min-width: auto;
     margin: 20px;
     margin-top: 90px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.0191734); }
-    .flexContainerContact .flexContainerContact__Info {
-      top: 0;
-      height: 550px;
-      position: relative;
-      box-shadow: none; }
-    .flexContainerContact .flexContainerContact__Form {
-      position: relative;
-      width: calc(100%-350px);
-      padding-left: 0;
-      margin-left: 0;
-      padding: 40px;
-      height: 550px;
-      box-shadow: none; }
-      .flexContainerContact .flexContainerContact__Form .formBox span {
-        font-size: 2rem; } }
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.0191734);
+  }
+  .flexContainerContact .flexContainerContact__Info {
+    top: 0;
+    height: 550px;
+    position: relative;
+    box-shadow: none;
+  }
+  .flexContainerContact .flexContainerContact__Form {
+    position: relative;
+    width: calc(100%-350px);
+    padding-left: 0;
+    margin-left: 0;
+    padding: 40px;
+    height: 550px;
+    box-shadow: none;
+  }
+  .flexContainerContact .flexContainerContact__Form .formBox span {
+    font-size: 2rem;
+  }
+}
 
 @media (max-width: 1017px) {
   .flexContainerContact {
     display: flex;
-    flex-direction: column-reverse; }
-    .flexContainerContact .flexContainerContact__Form {
-      width: 100%;
-      height: auto; }
-    .flexContainerContact .flexContainerContact__Info {
-      width: 100%;
-      height: auto; } }
+    flex-direction: column-reverse;
+  }
+  .flexContainerContact .flexContainerContact__Form {
+    width: 100%;
+    height: auto;
+  }
+  .flexContainerContact .flexContainerContact__Info {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /*  inicio media querie de home*/
 @media screen and (min-width: 1940px) {
   .bodyhome {
     background: fixed linear-gradient(0deg, #ffbb00 32%, #ff9500 100%);
-    min-height: 100%; }
+    min-height: 100%;
+  }
   .flexContainerMain {
     display: flex;
     flex-direction: row;
@@ -647,74 +800,91 @@ svg {
     justify-content: center;
     align-items: center;
     margin-left: 2%;
-    gap: 4%; }
-    .flexContainerMain .logoPrincipal {
-      order: 2;
-      max-width: 680px; }
-    .flexContainerMain .flexContainerMain__textoHome {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      order: 1;
-      margin-left: 10px; }
-      .flexContainerMain .flexContainerMain__textoHome h1 {
-        color: white;
-        font-size: 750%;
-        font-weight: 700;
-        margin-bottom: 0.9rem;
-        min-width: 1000px; }
-      .flexContainerMain .flexContainerMain__textoHome h2 {
-        color: white;
-        font-size: 356%;
-        font-weight: 700;
-        margin-bottom: 0.9rem;
-        display: none; }
+    gap: 4%;
+  }
+  .flexContainerMain .logoPrincipal {
+    order: 2;
+    max-width: 680px;
+  }
+  .flexContainerMain .flexContainerMain__textoHome {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    margin-left: 10px;
+  }
+  .flexContainerMain .flexContainerMain__textoHome h1 {
+    color: white;
+    font-size: 750%;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    min-width: 1000px;
+  }
+  .flexContainerMain .flexContainerMain__textoHome h2 {
+    color: white;
+    font-size: 356%;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    display: none;
+  }
   .homeButton {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    justify-items: center; }
-    .homeButton button {
-      margin: 1rem;
-      text-decoration: none;
-      background: #d96704;
-      box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
-      border-radius: 30px;
-      width: 397px;
-      height: 7.8rem;
-      border: none;
-      font-size: 1.5vw;
-      color: white;
-      font-weight: 500; }
-      .homeButton button:hover {
-        background: rgba(0, 0, 0, 0.71);
-        color: #d4d4d4; } }
+    justify-items: center;
+  }
+  .homeButton button {
+    margin: 1rem;
+    text-decoration: none;
+    background: #d96704;
+    box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+      0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+      0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+    border-radius: 30px;
+    width: 397px;
+    height: 7.8rem;
+    border: none;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 500;
+  }
+  .homeButton button:hover {
+    background: rgba(0, 0, 0, 0.71);
+    color: #d4d4d4;
+  }
+}
 
 @media screen and (max-width: 1400px) {
   .bodyhome {
     background: fixed linear-gradient(0deg, #7dbb00 32%, #ff9500 100%);
-    min-height: 100%; }
+    min-height: 100%;
+  }
   .logolymona {
-    display: none; }
+    display: none;
+  }
   .flexContainerNav {
     position: absolute;
     background-color: transparent;
     min-height: 100vh;
-    width: 10rem; }
+    width: 10rem;
+  }
   .menu_items {
-    display: none; }
+    display: none;
+  }
   .logoMenuBurger {
-    display: block; }
+    display: block;
+  }
   .btn_menu {
     width: 5.4rem;
     height: 5.4rem;
     position: absolute;
     left: 45%;
     top: 4%;
-    display: block; }
+    display: block;
+  }
   .flexContainerMain {
     display: flex;
     flex-direction: column;
@@ -722,74 +892,96 @@ svg {
     justify-content: center;
     align-items: center;
     margin-left: 2%;
-    gap: 4%; }
-    .flexContainerMain .logoPrincipal {
-      display: none; }
-    .flexContainerMain .logoMobile {
-      display: flex; }
-    .flexContainerMain .flexContainerMain__textoHome {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center; }
-      .flexContainerMain .flexContainerMain__textoHome h1 {
-        display: none; }
-      .flexContainerMain .flexContainerMain__textoHome h2 {
-        color: #231f20;
-        font-size: 356%;
-        font-weight: 700;
-        margin-bottom: 0.9rem;
-        display: flex; }
+    gap: 4%;
+  }
+  .flexContainerMain .logoPrincipal {
+    display: none;
+  }
+  .flexContainerMain .logoMobile {
+    display: flex;
+  }
+  .flexContainerMain .flexContainerMain__textoHome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .flexContainerMain .flexContainerMain__textoHome h1 {
+    display: none;
+  }
+  .flexContainerMain .flexContainerMain__textoHome h2 {
+    color: #231f20;
+    font-size: 356%;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    display: flex;
+  }
   .homeButton {
     flex-direction: column;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    justify-items: center; }
-    .homeButton button {
-      text-decoration: none;
-      background: #d96704;
-      box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
-      border-radius: 30px;
-      border: none;
-      font-size: 1.5vw;
-      color: white;
-      font-weight: 500; }
-      .homeButton button:hover {
-        background: rgba(0, 0, 0, 0.71);
-        color: #d4d4d4; }
+    justify-items: center;
+  }
+  .homeButton button {
+    text-decoration: none;
+    background: #d96704;
+    box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
+      0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
+      0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
+    border-radius: 30px;
+    border: none;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 500;
+  }
+  .homeButton button:hover {
+    background: rgba(0, 0, 0, 0.71);
+    color: #d4d4d4;
+  }
   .diseñoFotter {
     position: absolute;
     top: 38.19444%;
     left: 38.19444%;
     width: 100vw;
     height: 90vh;
-    /*iconos de rrss*/ } }
+    /*iconos de rrss*/
+  }
+}
 
 /*ocultar menu JSS*/
 /*menu*/
 .flexContainerNav2 {
   position: fixed;
-  background: linear-gradient(180deg, rgba(255, 150, 1, 0.2) 0%, rgba(255, 184, 1, 0.2) 100%), #ffb801;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 150, 1, 0.2) 0%,
+      rgba(255, 184, 1, 0.2) 100%
+    ),
+    #ffb801;
   min-height: 100vh;
   width: 10rem;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .menu_items2 {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 2rem; }
-  .menu_items2 li {
-    position: relative;
-    margin-top: 3rem;
-    writing-mode: vertical-rl;
-    margin-right: 1.5rem; }
-    .menu_items2 li a {
-      font-family: roboto;
-      font-style: normal;
-      color: #ffffff;
-      font-size: 3rem;
-      font-weight: bold;
-      padding: 2rem; }
+  padding: 2rem;
+}
+.menu_items2 li {
+  position: relative;
+  margin-top: 3rem;
+  writing-mode: vertical-rl;
+  margin-right: 1.5rem;
+}
+.menu_items2 li a {
+  font-family: roboto;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2rem;
+}
