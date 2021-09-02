@@ -1,39 +1,95 @@
-/*CSS SHOP*/
-/*Margen SHOP*/
+//MIXINS
 
-.diseñarTienda {
-  margin-left: 25%;
-  height: 95.5rem;
-}
-
-.margenTodoContenido {
+//mixin caja de cada unas de los productos
+@mixin boxProductShop($fondo) {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: columm;
+  height: 700px;
+  width: 500px;
+  margin-top: 7rem;
+  background: $fondo;
+  position: relative;
 }
 
-/*SHOP diseño*/
-
-.ordentienda {
-  padding: 4rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 200%;
-  display: inline-block;
+//mixin para titulos principales
+@mixin tituloShop {
   text-align: center;
+  padding: 1rem;
+  margin-left: 19rem;
+  font-weight: 800;
 }
+// mixin para contenido de cada unas de las cajas
+@mixin contenidoBox {
+  display: flex;
+  padding: 7rem 3rem 0 3rem;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+//mixin de tablas
+@mixin tablas {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  padding-top: 4rem;
+}
+// FIN MIXIN
 
-/*Modificacion texto en tabla SHOP*/
+// Main de los productos
+.shopMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-left: 10%;
 
-main div table tr {
-  th {
-    color: #ffffff;
-    background-color: #ffbb00bd;
-    padding: 0.5rem;
+  // Cajas de los productos
+  //caja Uno
+  .productOne {
+    @include boxProductShop(blue);
+
+    & h2 {
+      @include tituloShop;
+    }
+
+    .containerPrints {
+      @include contenidoBox;
+    }
+    .descripciones {
+      @include tablas;
+    }
+  }
+  //caja dos
+  .productTwo {
+    @include boxProductShop(Green);
+    & h2 {
+      @include tituloShop;
+    }
+
+    .containerArttoy {
+      @include contenidoBox;
+    }
+    .descripciones {
+      @include tablas;
+    }
   }
 
-  td {
-    padding: 1rem;
+  //caja tres
+  .productThree {
+    @include boxProductShop(red);
+    & h2 {
+      @include tituloShop;
+    }
+
+    .containerPrintsTwo {
+      @include contenidoBox;
+    }
+    .descripciones {
+      @include tablas;
+    }
   }
 }
-
-/*FIN DE SHOP*/
