@@ -1,8 +1,7 @@
 /* home*/
 
 .bodyhome {
-  background: fixed
-    linear-gradient(0deg, rgba(255, 187, 0, 1) 32%, rgba(255, 149, 0, 1) 100%);
+  background: $backgroundColor;
   min-height: 100%;
   min-width: 100vw;
 }
@@ -68,10 +67,8 @@
   button {
     margin: 1rem;
     text-decoration: none;
-    background: #d96704;
-    box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
-      0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
-      0px 0.931014px 2.06153px rgba(0, 0, 0, 0.0484671);
+    background: $buttonColor;
+    box-shadow: $buttonShadow;
     border-radius: 30px;
     width: 20vw;
     height: 6.8rem;
@@ -81,8 +78,8 @@
     font-weight: 500;
 
     &:hover {
-      background: rgba(0, 0, 0, 0.71);
-      color: rgb(212, 212, 212);
+      background: $hover;
+      color: $hoverFont;
     }
   }
 }
