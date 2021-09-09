@@ -10,6 +10,11 @@
   .itemTexto1 {
     grid-area: texto1;
     max-width: 80rem;
+
+    h1 {
+      padding: 0rem;
+      text-align: left;
+    }
   }
 
   /*Softwares*/
@@ -18,10 +23,11 @@
     display: grid;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "S1 S2 S3 S4" "S5 S6 S7 S8";
 
     .itemTitulo2 {
+      font-weight: 700;
       grid-area: titulo2;
     }
 
@@ -91,6 +97,10 @@
   .contenedorClientes {
     grid-area: clientes;
 
+    .itemTitulo3 {
+      font-weight: 700;
+    }
+
     div {
       display: flex;
       justify-content: space-around;
@@ -110,6 +120,8 @@
     grid-area: botonimagen;
 
     .itemImagen {
+      width: 1431px/1980px * 100%;
+      height: 1529px/1980px * 100%;
       margin-right: 5rem;
       text-align: center;
     }

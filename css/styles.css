@@ -372,14 +372,18 @@ svg {
   .contenedorgrid .itemTexto1 {
     grid-area: texto1;
     max-width: 80rem; }
+    .contenedorgrid .itemTexto1 h1 {
+      padding: 0rem;
+      text-align: left; }
   .contenedorgrid .flexContentSkills {
     grid-area: skill;
     display: grid;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "S1 S2 S3 S4" "S5 S6 S7 S8"; }
     .contenedorgrid .flexContentSkills .itemTitulo2 {
+      font-weight: 700;
       grid-area: titulo2; }
     .contenedorgrid .flexContentSkills .soft1 {
       grid-area: S1; }
@@ -422,6 +426,8 @@ svg {
         width: 40%; }
   .contenedorgrid .contenedorClientes {
     grid-area: clientes; }
+    .contenedorgrid .contenedorClientes .itemTitulo3 {
+      font-weight: 700; }
     .contenedorgrid .contenedorClientes div {
       display: flex;
       justify-content: space-around;
@@ -434,6 +440,8 @@ svg {
   .contenedorgrid .contenedorBotoneImagen {
     grid-area: botonimagen; }
     .contenedorgrid .contenedorBotoneImagen .itemImagen {
+      width: 72.27273%;
+      height: 77.22222%;
       margin-right: 5rem;
       text-align: center; }
     .contenedorgrid .contenedorBotoneImagen .buttonCv {
