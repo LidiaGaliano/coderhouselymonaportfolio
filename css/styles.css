@@ -362,7 +362,7 @@ svg {
 
 .contenedorgrid {
   color: black;
-  padding-top: 2rem;
+  padding-top: 5rem;
   margin-left: 7.8125%;
   display: grid;
   grid-column-gap: 2rem;
@@ -438,20 +438,19 @@ svg {
         padding: 2rem;
         max-height: 200px; }
   .contenedorgrid .contenedorBotoneImagen {
+    align-items: center;
     grid-area: botonimagen; }
     .contenedorgrid .contenedorBotoneImagen .itemImagen {
-      width: 72.27273%;
-      height: 77.22222%;
+      margin-right: 2rem;
+      padding: 5rem;
       margin-right: 5rem;
       text-align: center; }
     .contenedorgrid .contenedorBotoneImagen .buttonCv {
-      padding-top: 5rem;
       display: flex;
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap; }
       .contenedorgrid .contenedorBotoneImagen .buttonCv button {
-        margin: 1rem;
         text-decoration: none;
         background: #d96704;
         box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
