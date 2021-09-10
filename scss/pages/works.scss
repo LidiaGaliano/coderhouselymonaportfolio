@@ -27,6 +27,9 @@
     &:hover {
       background-color: #626262;
     }
+    &:active .filter-button:active {
+      background-color: #626262;
+    }
   }
 }
 
