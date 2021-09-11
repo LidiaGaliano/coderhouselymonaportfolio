@@ -81,7 +81,7 @@
 @media screen and (max-width: 1400px) {
   .bodyhome {
     background: $backgroundColor;
-    min-height: 100%;
+    height: 100vh;
   }
 
   //navegador hamburgesa
@@ -90,25 +90,52 @@
   }
 
   .flexContainerNav {
-    position: absolute;
-    background-color: transparent;
-    min-height: 100vh;
-    width: 10rem;
-  }
+    width: 90vw;
+    min-height: 10%;
+    border-radius: 57.5px;
+    left: 5%;
+    top: -2.5%;
+    z-index: 1;
 
-  .menu_items {
-    display: none;
-  }
-  .logoMenuBurger {
-    display: block;
-  }
-  .btn_menu {
-    width: 5.4rem;
-    height: 5.4rem;
-    position: absolute;
-    left: 45%;
-    top: 4%;
-    display: block;
+    .menu_items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      li {
+        display: inline-block;
+        writing-mode: horizontal-tb;
+        bottom: 0.9rem;
+        a {
+          color: $buttonColor;
+          padding: 0;
+          display: inline-block;
+          text-align: center;
+        }
+        a:nth-child(1) {
+          width: 110px;
+        }
+        a:nth-child(2) {
+          width: 100px;
+        }
+        a:nth-child(3) {
+          width: 160px;
+        }
+        a:nth-child(4) {
+          width: 120px;
+        }
+      }
+    }
+    // .animation {
+    //   position: absolute;
+    //   height: 100%;
+    //   left: 8%;
+    //   top: -14%;
+    //   z-index: 0;
+    //   background: $buttonColor;
+    //   width: 16%;
+    //   border-radius: 20px;
+    // }
   }
 
   // fin de navegador
@@ -163,8 +190,8 @@
       background: $buttonColor;
       box-shadow: $buttonShadow;
       border-radius: 30px;
-      // width: 397px;
-      // height: 7.8rem;
+      width: 397px;
+
       border: none;
       font-size: 1.5vw;
       color: white;
@@ -176,19 +203,10 @@
       }
     }
   }
-  //Fin main
-
-  //footer
   .diseñoFotter {
     position: absolute;
-    top: 550px/1440px * 100%;
-    left: 550px/1440px * 100%;
-    width: 100vw;
-    height: 90vh;
-
-    /*iconos de rrss*/
-
-    // fin footer
+    margin: 0;
+    top: 80vh;
+    left: 42vw;
   }
 }
-/*ocultar menu JSS*/
