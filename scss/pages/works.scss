@@ -28,6 +28,9 @@
     &:hover {
       background-color: $hover;
     }
+    &:active .filter-button:active {
+      background-color: #626262;
+    }
   }
 }
 

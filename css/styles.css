@@ -247,6 +247,8 @@ footer div a {
     margin: 0.4em; }
     .botonesWorks button:hover {
       background-color: rgba(0, 0, 0, 0.71); }
+    .botonesWorks button:active .filter-button:active {
+      background-color: #626262; }
 
 /*Galleria Bootstrap*/
 .container-fluid {
@@ -361,7 +363,7 @@ svg {
 
 .contenedorgrid {
   color: black;
-  padding-top: 2rem;
+  padding-top: 5rem;
   margin-left: 7.8125%;
   display: grid;
   grid-column-gap: 2rem;
@@ -371,72 +373,85 @@ svg {
   .contenedorgrid .itemTexto1 {
     grid-area: texto1;
     max-width: 80rem; }
+    .contenedorgrid .itemTexto1 h1 {
+      padding: 0rem;
+      text-align: left; }
   .contenedorgrid .flexContentSkills {
     grid-area: skill;
     display: grid;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 2rem;
     grid-template-areas: "titulo2 titulo2 titulo2 titulo2" "S1 S2 S3 S4" "S5 S6 S7 S8"; }
     .contenedorgrid .flexContentSkills .itemTitulo2 {
+      font-weight: 700;
       grid-area: titulo2; }
     .contenedorgrid .flexContentSkills .soft1 {
-      grid-area: S1;
-      text-align: inherit; }
+      grid-area: S1; }
       .contenedorgrid .flexContentSkills .soft1 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft2 {
       grid-area: S2;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft2 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft3 {
       grid-area: S3;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft3 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft4 {
       grid-area: S4;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft4 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft5 {
       grid-area: S5;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft5 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft6 {
       grid-area: S6;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft6 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft7 {
       grid-area: S7;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft7 img {
-        width: 60%; }
+        width: 40%; }
     .contenedorgrid .flexContentSkills .soft8 {
       grid-area: S8;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft8 img {
-        width: 60%; }
+        width: 40%; }
   .contenedorgrid .contenedorClientes {
     grid-area: clientes; }
+    .contenedorgrid .contenedorClientes .itemTitulo3 {
+      font-weight: 700; }
+    .contenedorgrid .contenedorClientes div {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center; }
+      .contenedorgrid .contenedorClientes div img {
+        padding: 2rem;
+        max-height: 200px; }
   .contenedorgrid .contenedorBotoneImagen {
+    align-items: center;
     grid-area: botonimagen; }
     .contenedorgrid .contenedorBotoneImagen .itemImagen {
+      margin-right: 2rem;
+      padding: 5rem;
       margin-right: 5rem;
       text-align: center; }
-      .contenedorgrid .contenedorBotoneImagen .itemImagen img {
-        width: 72.27273%;
-        height: 77.22222%; }
     .contenedorgrid .contenedorBotoneImagen .buttonCv {
-      padding-top: 5rem;
       display: flex;
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap; }
       .contenedorgrid .contenedorBotoneImagen .buttonCv button {
-        margin: 1rem;
         text-decoration: none;
         background: #d96704;
         box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12), 0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329), 0px 0.93101px 2.06153px rgba(0, 0, 0, 0.0484671);
