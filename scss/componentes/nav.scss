@@ -7,8 +7,6 @@
 }
 
 .menu_items {
-  display: flex;
-  flex-direction: column;
   position: relative;
   padding: 2rem;
 
@@ -16,7 +14,7 @@
     position: relative;
     margin-top: 3rem;
     writing-mode: vertical-rl;
-    margin-right: 1.5rem;
+    margin-left: 0.9rem;
 
     a {
       font-family: roboto;

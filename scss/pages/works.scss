@@ -20,12 +20,13 @@
     font-weight: 700;
     color: white;
     border: none;
-    background-color: #ffbb00;
+    background-color: $buttonColor;
+    box-shadow: $buttonShadow;
     padding: 1rem;
     margin: 0.4em;
 
     &:hover {
-      background-color: #626262;
+      background-color: $hover;
     }
   }
 }

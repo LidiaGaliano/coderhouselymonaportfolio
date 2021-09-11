@@ -115,10 +115,8 @@
       button {
         margin: 1rem;
         text-decoration: none;
-        background: #d96704;
-        box-shadow: 0px 14px 31px rgba(0, 0, 0, 0.12),
-          0px 3.12708px 6.92426px rgba(0, 0, 0, 0.0715329),
-          0px 0.931014px 2.06153px rgba(0, 0, 0, 0.0484671);
+        background: $buttonColor;
+        box-shadow: $buttonShadow;
         border-radius: 60px;
         width: 20vw;
         height: 6.8rem;
@@ -129,8 +127,8 @@
         color: white;
 
         &:hover {
-          background: rgba(0, 0, 0, 0.71);
-          color: rgb(212, 212, 212);
+          background: $hover;
+          color: $hoverFont;
         }
       }
     }
