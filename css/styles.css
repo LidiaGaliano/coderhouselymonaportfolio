@@ -362,9 +362,8 @@ svg {
       padding-top: 4rem; }
 
 .contenedorgrid {
-  color: black;
   padding-top: 5rem;
-  margin-left: 7.8125%;
+  margin: 0rem 2rem 0 15rem;
   display: grid;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -372,7 +371,8 @@ svg {
   /*Softwares*/ }
   .contenedorgrid .itemTexto1 {
     grid-area: texto1;
-    max-width: 80rem; }
+    max-width: 80rem;
+    color: black; }
     .contenedorgrid .itemTexto1 h1 {
       padding: 0rem;
       text-align: left; }
@@ -389,49 +389,49 @@ svg {
     .contenedorgrid .flexContentSkills .soft1 {
       grid-area: S1; }
       .contenedorgrid .flexContentSkills .soft1 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft2 {
       grid-area: S2;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft2 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft3 {
       grid-area: S3;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft3 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft4 {
       grid-area: S4;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft4 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft5 {
       grid-area: S5;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft5 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft6 {
       grid-area: S6;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft6 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft7 {
       grid-area: S7;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft7 img {
-        width: 40%; }
+        width: 10rem; }
     .contenedorgrid .flexContentSkills .soft8 {
       grid-area: S8;
       text-align: inherit; }
       .contenedorgrid .flexContentSkills .soft8 img {
-        width: 40%; }
+        width: 10rem; }
   .contenedorgrid .contenedorClientes {
     grid-area: clientes; }
     .contenedorgrid .contenedorClientes .itemTitulo3 {
       font-weight: 700; }
     .contenedorgrid .contenedorClientes div {
       display: flex;
-      justify-content: space-around;
+      justify-content: start;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center; }
@@ -442,10 +442,10 @@ svg {
     align-items: center;
     grid-area: botonimagen; }
     .contenedorgrid .contenedorBotoneImagen .itemImagen {
-      margin-right: 2rem;
       padding: 5rem;
       margin-right: 5rem;
-      text-align: center; }
+      text-align: center;
+      min-width: 200px; }
     .contenedorgrid .contenedorBotoneImagen .buttonCv {
       display: flex;
       justify-content: center;
@@ -794,6 +794,33 @@ svg {
     margin: 0;
     top: 80vh;
     left: 42vw; } }
+
+@media screen and (max-width: 1400px) {
+  body .flexContainerNav2 {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    min-height: 10%;
+    border-radius: 57.5px;
+    left: 5%;
+    top: -2.5%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; }
+    body .flexContainerNav2 .menu_items2 {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap; }
+      body .flexContainerNav2 .menu_items2 li {
+        writing-mode: horizontal-tb; }
+        body .flexContainerNav2 .menu_items2 li a {
+          font-size: 250%; }
+  .contenedorgrid {
+    margin: 0 0 0 2rem; }
+  .flexContainerFooter {
+    margin-left: 0;
+    width: 100vw; } }
 
 /*menu*/
 .flexContainerNav2 {

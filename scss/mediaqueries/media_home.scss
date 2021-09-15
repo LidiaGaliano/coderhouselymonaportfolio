@@ -77,7 +77,7 @@
     }
   }
 }
-// Media queries laptop normal
+// Media queries laptop normal home y contact
 @media screen and (max-width: 1400px) {
   .bodyhome {
     background: $backgroundColor;
@@ -208,5 +208,43 @@
     margin: 0;
     top: 80vh;
     left: 42vw;
+  }
+}
+@media screen and (max-width: 1400px) {
+  body {
+    .flexContainerNav2 {
+      display: flex;
+      position: relative;
+      width: 90vw;
+      min-height: 10%;
+      border-radius: 57.5px;
+      left: 5%;
+      top: -2.5%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      .menu_items2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        li {
+          writing-mode: horizontal-tb;
+          a {
+            font-size: 250%;
+          }
+        }
+      }
+    }
+  }
+
+  .contenedorgrid {
+    margin: 0 0 0 2rem;
+  }
+
+  .flexContainerFooter {
+    margin-left: 0;
+    width: 100vw;
   }
 }
