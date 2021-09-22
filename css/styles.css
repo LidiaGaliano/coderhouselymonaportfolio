@@ -735,15 +735,25 @@ svg {
           color: #d96704;
           padding: 0;
           display: inline-block;
-          text-align: center; }
+          text-align: center;
+          font-size: 250%; }
         .flexContainerNav .menu_items li a:nth-child(1) {
-          width: 110px; }
+          width: 130px; }
         .flexContainerNav .menu_items li a:nth-child(2) {
-          width: 100px; }
-        .flexContainerNav .menu_items li a:nth-child(3) {
-          width: 160px; }
-        .flexContainerNav .menu_items li a:nth-child(4) {
           width: 120px; }
+        .flexContainerNav .menu_items li a:nth-child(3) {
+          width: 100px; }
+        .flexContainerNav .menu_items li a:nth-child(4) {
+          width: 160px; }
+    .flexContainerNav .animation {
+      position: absolute;
+      height: 100%;
+      left: 20%;
+      top: -14%;
+      z-index: 0;
+      background: #d96704;
+      width: 16%;
+      border-radius: 20px; }
   .flexContainerMain {
     display: flex;
     flex-direction: column;
@@ -801,9 +811,9 @@ svg {
     position: relative;
     width: 90vw;
     min-height: 10%;
-    border-radius: 57.5px;
+    border-radius: 57.7px;
     left: 5%;
-    top: -2.5%;
+    top: -2.5rem;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap; }
@@ -811,6 +821,7 @@ svg {
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      left: 18px;
       flex-wrap: nowrap; }
       body .flexContainerNav2 .menu_items2 li {
         writing-mode: horizontal-tb; }

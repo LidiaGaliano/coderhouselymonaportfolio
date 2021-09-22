@@ -111,31 +111,32 @@
           padding: 0;
           display: inline-block;
           text-align: center;
+          font-size: 250%;
         }
         a:nth-child(1) {
-          width: 110px;
+          width: 130px;
         }
         a:nth-child(2) {
-          width: 100px;
+          width: 120px;
         }
         a:nth-child(3) {
-          width: 160px;
+          width: 100px;
         }
         a:nth-child(4) {
-          width: 120px;
+          width: 160px;
         }
       }
     }
-    // .animation {
-    //   position: absolute;
-    //   height: 100%;
-    //   left: 8%;
-    //   top: -14%;
-    //   z-index: 0;
-    //   background: $buttonColor;
-    //   width: 16%;
-    //   border-radius: 20px;
-    // }
+    .animation {
+      position: absolute;
+      height: 100%;
+      left: 20%;
+      top: -14%;
+      z-index: 0;
+      background: $buttonColor;
+      width: 16%;
+      border-radius: 20px;
+    }
   }
 
   // fin de navegador
@@ -217,9 +218,9 @@
       position: relative;
       width: 90vw;
       min-height: 10%;
-      border-radius: 57.5px;
+      border-radius: 57.7px;
       left: 5%;
-      top: -2.5%;
+      top: -2.5rem;
       justify-content: center;
       align-items: center;
       flex-wrap: nowrap;
@@ -228,6 +229,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        left: 18px;
         flex-wrap: nowrap;
         li {
           writing-mode: horizontal-tb;
