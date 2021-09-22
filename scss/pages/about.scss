@@ -1,7 +1,6 @@
 .contenedorgrid {
-  color: black;
   padding-top: 5rem;
-  margin-left: 150px/1920px * 100%;
+  margin: 0rem 2rem 0 15rem;
   display: grid;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -10,6 +9,7 @@
   .itemTexto1 {
     grid-area: texto1;
     max-width: 80rem;
+    color: black;
 
     h1 {
       padding: 0rem;
@@ -34,7 +34,7 @@
     .soft1 {
       grid-area: S1;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
 
@@ -42,14 +42,14 @@
       grid-area: S2;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
     .soft3 {
       grid-area: S3;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
 
@@ -57,7 +57,7 @@
       grid-area: S4;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
 
@@ -65,7 +65,7 @@
       grid-area: S5;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
 
@@ -73,21 +73,21 @@
       grid-area: S6;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
     .soft7 {
       grid-area: S7;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
     .soft8 {
       grid-area: S8;
       text-align: inherit;
       img {
-        width: 40%;
+        width: 10rem;
       }
     }
   }
@@ -103,7 +103,7 @@
 
     div {
       display: flex;
-      justify-content: space-around;
+      justify-content: start;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
@@ -121,10 +121,10 @@
     grid-area: botonimagen;
 
     .itemImagen {
-      margin-right: 2rem;
       padding: 5rem;
       margin-right: 5rem;
       text-align: center;
+      min-width: 200px;
     }
     .buttonCv {
       display: flex;
