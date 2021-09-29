@@ -1,14 +1,14 @@
 //MIXINS
 
 //mixin caja de cada unas de los productos
-@mixin boxProductShop($fondo) {
+@mixin boxProductShop() {
   display: flex;
   flex-direction: columm;
   height: 700px;
   width: 500px;
   margin-top: 7rem;
-  background: $fondo;
   position: relative;
+  border: $buttonColor solid 2px;
 }
 
 //mixin para titulos principales
@@ -45,12 +45,12 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-left: 10%;
+  margin-left: 7%;
 
   // Cajas de los productos
   //caja Uno
   .productOne {
-    @include boxProductShop(blue);
+    @include boxProductShop();
 
     & h2 {
       @include tituloShop;
@@ -65,7 +65,7 @@
   }
   //caja dos
   .productTwo {
-    @include boxProductShop(Green);
+    @include boxProductShop();
     & h2 {
       @include tituloShop;
     }
@@ -80,7 +80,7 @@
 
   //caja tres
   .productThree {
-    @include boxProductShop(red);
+    @include boxProductShop();
     & h2 {
       @include tituloShop;
     }
@@ -91,5 +91,10 @@
     .descripciones {
       @include tablas;
     }
+  }
+}
+@media (max-width: 600px) {
+  .shopMain {
+    margin-left: 1%;
   }
 }
