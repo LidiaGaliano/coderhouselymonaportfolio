@@ -9,8 +9,8 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-around;
-  margin-left: 10rem;
-  width: 100vw;
+
+  width: 99.13vw;
   height: 20rem;
   background-color: #231f20;
 }
@@ -44,7 +44,8 @@
 }
 
 .flexContainerFooter__logoGrande {
-  width: 46.75rem;
+  width: 27%;
+  min-width: 25rem;
   order: 2;
 }
 
@@ -57,6 +58,10 @@
     padding-right: 0.3rem;
     text-align: right;
     color: #ffffff;
+  }
+  .containerRedes img {
+    width: 6rem;
+    height: 6rem;
   }
 }
 
