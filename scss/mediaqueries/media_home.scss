@@ -1,6 +1,10 @@
 /*  inicio media querie de home*/
 
 @media screen and (min-width: 1940px) {
+  .homeli {
+    display: block;
+    z-index: 1;
+  }
   .bodyhome {
     background: fixed
       linear-gradient(0deg, rgba(255, 187, 0, 1) 32%, rgba(255, 149, 0, 1) 100%);
@@ -186,7 +190,6 @@
     justify-items: center;
 
     button {
-      // margin: 1rem;
       text-decoration: none;
       background: $buttonColor;
       box-shadow: $buttonShadow;
@@ -247,6 +250,6 @@
 
   .flexContainerFooter {
     margin-left: 0;
-    width: 100vw;
+    max-width: 100vw;
   }
 }
