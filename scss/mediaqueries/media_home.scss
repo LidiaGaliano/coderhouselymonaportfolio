@@ -228,6 +228,11 @@
       align-items: center;
       flex-wrap: nowrap;
 
+      .homeli {
+        display: block;
+        color: white;
+      }
+
       .menu_items2 {
         flex-direction: row;
         justify-content: center;
@@ -249,7 +254,6 @@
   }
 
   .flexContainerFooter {
-    margin-left: 0;
-    max-width: 100vw;
+    max-width: 98%;
   }
 }

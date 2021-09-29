@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  overflow-x: hidden; }
+
 /*unidad de medida responsive*/
 html {
   font-size: 62.5%; }
@@ -508,8 +511,8 @@ svg {
     font-size: 36px; }
   .flexContainerContact .rrss {
     position: relative;
-    top: 70%;
-    left: 14%; }
+    top: 20%;
+    left: 10%; }
     .flexContainerContact .rrss.rrss a {
       padding-left: 7%; }
   .flexContainerContact .info {
@@ -533,10 +536,8 @@ svg {
         padding-right: 10%; }
   .flexContainerContact .flexContainerContact__Form {
     position: absolute;
-    padding: 70px, 50px;
-    padding-left: 250px;
+    padding-left: 162px;
     margin-left: 150px;
-    width: 72%;
     height: 100%;
     background: white;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.12), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0862625), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0715329), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.06), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0484671), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0337375); }
@@ -636,7 +637,7 @@ svg {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.0191734); }
     .flexContainerContact .flexContainerContact__Info {
       top: 0;
-      height: 550px;
+      height: 644px;
       position: relative;
       box-shadow: none; }
     .flexContainerContact .flexContainerContact__Form {
@@ -645,10 +646,13 @@ svg {
       padding-left: 0;
       margin-left: 0;
       padding: 40px;
-      height: 550px;
+      height: 644px;
       box-shadow: none; }
       .flexContainerContact .flexContainerContact__Form .formBox span {
-        font-size: 2rem; } }
+        font-size: 2rem; }
+      .flexContainerContact .flexContainerContact__Form .formBox {
+        margin-left: 46px;
+        width: 79%; } }
 
 @media (max-width: 1017px) {
   .flexContainerContact {
@@ -656,10 +660,20 @@ svg {
     flex-direction: column-reverse; }
     .flexContainerContact .flexContainerContact__Form {
       width: 100%;
-      height: auto; }
+      height: 693px; }
     .flexContainerContact .flexContainerContact__Info {
       width: 100%;
       height: auto; } }
+
+@media (max-width: 600px) {
+  .flexContainerContact .flexContainerContact__Form {
+    width: 120%;
+    height: 829px; }
+    .flexContainerContact .flexContainerContact__Form .formBox {
+      top: -20px;
+      display: inline-block; }
+  .flexContainerContact .flexContainerContact__Info {
+    width: 120%; } }
 
 /*  inicio media querie de home*/
 @media screen and (min-width: 1940px) {
@@ -830,6 +844,9 @@ svg {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap; }
+    body .flexContainerNav2 .homeli {
+      display: block;
+      color: white; }
     body .flexContainerNav2 .menu_items2 {
       flex-direction: row;
       justify-content: center;
@@ -843,8 +860,7 @@ svg {
   .contenedorgrid {
     margin: 0 0 0 2rem; }
   .flexContainerFooter {
-    margin-left: 0;
-    max-width: 100vw; } }
+    max-width: 98%; } }
 
 /*menu*/
 .flexContainerNav2 {
@@ -854,7 +870,7 @@ svg {
   width: 10rem;
   z-index: 1; }
   .flexContainerNav2 .homeli {
-    display: block;
+    display: none;
     color: white; }
 
 .menu_items2 {
