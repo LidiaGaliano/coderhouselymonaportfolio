@@ -294,15 +294,15 @@ svg {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-left: 10%; }
+  margin-left: 7%; }
   .shopMain .productOne {
     display: flex;
     flex-direction: columm;
     height: 700px;
     width: 500px;
     margin-top: 7rem;
-    background: blue;
-    position: relative; }
+    position: relative;
+    border: #d96704 solid 2px; }
     .shopMain .productOne h2 {
       text-align: center;
       padding: 1rem;
@@ -327,8 +327,8 @@ svg {
     height: 700px;
     width: 500px;
     margin-top: 7rem;
-    background: Green;
-    position: relative; }
+    position: relative;
+    border: #d96704 solid 2px; }
     .shopMain .productTwo h2 {
       text-align: center;
       padding: 1rem;
@@ -353,8 +353,8 @@ svg {
     height: 700px;
     width: 500px;
     margin-top: 7rem;
-    background: red;
-    position: relative; }
+    position: relative;
+    border: #d96704 solid 2px; }
     .shopMain .productThree h2 {
       text-align: center;
       padding: 1rem;
@@ -373,6 +373,10 @@ svg {
       gap: 4rem;
       justify-content: center;
       padding-top: 4rem; }
+
+@media (max-width: 600px) {
+  .shopMain {
+    margin-left: 1%; } }
 
 .contenedorgrid {
   padding-top: 5rem;
@@ -861,6 +865,13 @@ svg {
     margin: 0 0 0 2rem; }
   .flexContainerFooter {
     max-width: 98%; } }
+
+@media screen and (max-width: 780px) {
+  body .flexContainerNav2 {
+    width: 4.5 rem; }
+    body .flexContainerNav2 .menu_items2 li a {
+      font-size: 150%;
+      padding: 0rem; } }
 
 /*menu*/
 .flexContainerNav2 {

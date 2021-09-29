@@ -248,12 +248,27 @@
       }
     }
   }
-
   .contenedorgrid {
     margin: 0 0 0 2rem;
   }
 
   .flexContainerFooter {
     max-width: 98%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    .flexContainerNav2 {
+      width: 4.5 rem;
+      .menu_items2 {
+        li {
+          a {
+            font-size: 150%;
+            padding: 0rem;
+          }
+        }
+      }
+    }
   }
 }
