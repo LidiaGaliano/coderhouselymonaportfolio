@@ -1,24 +1,19 @@
 /*CSS NUEVO FOOTER*/
 
 .flexContainerFooter {
+  padding: 2rem;
   margin-top: 1rem;
-  padding-bottom: 5rem;
-  position: absolute;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: flex-end;
+  display: grid;
   justify-content: space-around;
-  margin-left: 10rem;
-  width: 94.77%;
-  height: 20rem;
+  align-items: end;
   background-color: #231f20;
+  grid-template-areas: "politicas logo redes";
 }
 
 .flexContainerFooter__politicas {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+  padding-right: 2rem;
+  grid-area: politicas;
+  display: grid;
   gap: 0.6rem;
   order: 1;
 
@@ -44,12 +39,15 @@
 }
 
 .flexContainerFooter__logoGrande {
+  padding: 0rem 2rem 0rem 2rem;
+  grid-area: logo;
   width: 46.75rem;
   order: 2;
 }
 
 .flexContainerFooter__redesycopy {
-  display: block;
+  padding-left: 2rem;
+  grid-area: redes;
   order: 3;
 
   h4 {
@@ -57,6 +55,18 @@
     padding-right: 0.3rem;
     text-align: right;
     color: #ffffff;
+  }
+  .containerRedes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+
+    }
+    .redesLogo {
+      width: 98%;
+    }
   }
 }
 
