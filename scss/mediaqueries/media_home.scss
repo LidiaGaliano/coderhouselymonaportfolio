@@ -131,16 +131,6 @@
         }
       }
     }
-    .animation {
-      position: absolute;
-      height: 100%;
-      left: 20%;
-      top: -14%;
-      z-index: 0;
-      background: $buttonColor;
-      width: 16%;
-      border-radius: 20px;
-    }
   }
 
   // fin de navegador
@@ -155,6 +145,13 @@
     align-items: center;
     margin-left: 2%;
     gap: 4%;
+    h2 {
+      color: rgba(35, 31, 32, 1);
+      font-size: 3.56 * 100%;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      display: flex;
+    }
 
     .logoPrincipal {
       display: none;
@@ -171,14 +168,6 @@
 
       h1 {
         display: none;
-      }
-
-      h2 {
-        color: rgba(35, 31, 32, 1);
-        font-size: 3.56 * 100%;
-        font-weight: 700;
-        margin-bottom: 0.9rem;
-        display: flex;
       }
     }
   }
@@ -253,7 +242,7 @@
   }
 
   .flexContainerFooter {
-    max-width: 98%;
+    max-width: 100%;
   }
 }
 
@@ -270,5 +259,121 @@
         }
       }
     }
+
+    .flexContainerNav {
+      width: 4.5 rem;
+      .menu_items {
+        li {
+          a {
+            font-size: 150%;
+            padding: 0rem;
+          }
+          a:nth-child(1) {
+            width: 80px;
+          }
+          a:nth-child(2) {
+            width: 30px;
+          }
+          a:nth-child(3) {
+            width: 10px;
+          }
+          a:nth-child(4) {
+            width: 16px;
+          }
+        }
+      }
+    }
   }
+}
+
+// media queries mobile
+
+@media screen and (max-width: 414px) {
+  body {
+    .flexContainerNav {
+      width: 358px;
+      .menu_items {
+        li {
+          a {
+            font-size: 120%;
+            padding: 0rem;
+          }
+          a:nth-child(1) {
+            width: 50px;
+          }
+          a:nth-child(2) {
+            width: 30px;
+          }
+          a:nth-child(3) {
+            width: 10px;
+          }
+          a:nth-child(4) {
+            width: 16px;
+          }
+        }
+      }
+    }
+    .flexContainerMain {
+      .logoMobile {
+        width: 80%;
+      }
+      h2 {
+        font-size: 200%;
+      }
+    }
+    .homeButton button {
+      width: 23rem;
+      font-size: 1.5rem;
+    }
+
+    .diseñoFotter {
+      left: 120px;
+    }
+  }
+}
+//Footer mobile
+@media screen and (max-width: 414px) {
+  .flexContainerFooter {
+    max-width: 160vw;
+  }
+  .flexContainerFooter__logoGrande {
+    padding: 20 20 24 6;
+    width: 250px;
+  }
+  .flexContainerFooter__redesycopy {
+    display: none;
+  }
+}
+// about mobile
+
+@media screen and (max-width: 414px) {
+  .contenedorgrid {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    .flexContentSkills {
+      display: flex;
+      flex-direction: row;
+    }
+    .contenedorBotoneImagen {
+      .buttonCv button {
+        width: 200px;
+      }
+    }
+  }
+  .itemImagen {
+    display: none;
+  }
+
+  // botones de Works
+  .botonesWorks button {
+    display: none;
+  }
+  .container-fluid {
+    padding-left: 0rem;
+  }
+}
+// mobile 320
+
+@media screen and (max-width: 320px) {
 }
