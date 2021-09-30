@@ -6,7 +6,9 @@
   box-sizing: border-box; }
 
 body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
 /*unidad de medida responsive*/
 html {
@@ -185,6 +187,12 @@ footer div a {
   align-items: center;
   margin-left: 7rem;
   /*logo media queries movil*/ }
+  .flexContainerMain h2 {
+    color: white;
+    font-size: 356%;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+    display: none; }
   .flexContainerMain .logoPrincipal {
     order: 2;
     margin: 5rem;
@@ -208,19 +216,11 @@ footer div a {
       font-weight: 700;
       margin-bottom: 0.9rem;
       min-width: 800px; }
-    .flexContainerMain .flexContainerMain__textoHome h2 {
-      color: white;
-      font-size: 356%;
-      font-weight: 700;
-      margin-bottom: 0.9rem;
-      display: none; }
 
 .homeButton {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center; }
+  flex-wrap: wrap; }
   .homeButton button {
     margin: 1rem;
     text-decoration: none;
@@ -776,15 +776,6 @@ svg {
           width: 100px; }
         .flexContainerNav .menu_items li a:nth-child(4) {
           width: 160px; }
-    .flexContainerNav .animation {
-      position: absolute;
-      height: 100%;
-      left: 20%;
-      top: -14%;
-      z-index: 0;
-      background: #d96704;
-      width: 16%;
-      border-radius: 20px; }
   .flexContainerMain {
     display: flex;
     flex-direction: column;
@@ -793,6 +784,12 @@ svg {
     align-items: center;
     margin-left: 2%;
     gap: 4%; }
+    .flexContainerMain h2 {
+      color: #231f20;
+      font-size: 356%;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      display: flex; }
     .flexContainerMain .logoPrincipal {
       display: none; }
     .flexContainerMain .logoMobile {
@@ -805,12 +802,6 @@ svg {
       align-items: center; }
       .flexContainerMain .flexContainerMain__textoHome h1 {
         display: none; }
-      .flexContainerMain .flexContainerMain__textoHome h2 {
-        color: #231f20;
-        font-size: 356%;
-        font-weight: 700;
-        margin-bottom: 0.9rem;
-        display: flex; }
   .homeButton {
     flex-direction: column;
     flex-wrap: wrap;
@@ -864,14 +855,77 @@ svg {
   .contenedorgrid {
     margin: 0 0 0 2rem; }
   .flexContainerFooter {
-    max-width: 98%; } }
+    max-width: 100%; } }
 
 @media screen and (max-width: 780px) {
   body .flexContainerNav2 {
     width: 4.5 rem; }
     body .flexContainerNav2 .menu_items2 li a {
       font-size: 150%;
-      padding: 0rem; } }
+      padding: 0rem; }
+  body .flexContainerNav {
+    width: 4.5 rem; }
+    body .flexContainerNav .menu_items li a {
+      font-size: 150%;
+      padding: 0rem; }
+    body .flexContainerNav .menu_items li a:nth-child(1) {
+      width: 80px; }
+    body .flexContainerNav .menu_items li a:nth-child(2) {
+      width: 30px; }
+    body .flexContainerNav .menu_items li a:nth-child(3) {
+      width: 10px; }
+    body .flexContainerNav .menu_items li a:nth-child(4) {
+      width: 16px; } }
+
+@media screen and (max-width: 414px) {
+  body .flexContainerNav {
+    width: 358px; }
+    body .flexContainerNav .menu_items li a {
+      font-size: 120%;
+      padding: 0rem; }
+    body .flexContainerNav .menu_items li a:nth-child(1) {
+      width: 50px; }
+    body .flexContainerNav .menu_items li a:nth-child(2) {
+      width: 30px; }
+    body .flexContainerNav .menu_items li a:nth-child(3) {
+      width: 10px; }
+    body .flexContainerNav .menu_items li a:nth-child(4) {
+      width: 16px; }
+  body .flexContainerMain .logoMobile {
+    width: 80%; }
+  body .flexContainerMain h2 {
+    font-size: 200%; }
+  body .homeButton button {
+    width: 23rem;
+    font-size: 1.5rem; }
+  body .diseñoFotter {
+    left: 120px; } }
+
+@media screen and (max-width: 414px) {
+  .flexContainerFooter {
+    max-width: 160vw; }
+  .flexContainerFooter__logoGrande {
+    padding: 20 20 24 6;
+    width: 250px; }
+  .flexContainerFooter__redesycopy {
+    display: none; } }
+
+@media screen and (max-width: 414px) {
+  .contenedorgrid {
+    width: 300px;
+    display: flex;
+    flex-direction: column; }
+    .contenedorgrid .flexContentSkills {
+      display: flex;
+      flex-direction: row; }
+    .contenedorgrid .contenedorBotoneImagen .buttonCv button {
+      width: 200px; }
+  .itemImagen {
+    display: none; }
+  .botonesWorks button {
+    display: none; }
+  .container-fluid {
+    padding-left: 0rem; } }
 
 /*menu*/
 .flexContainerNav2 {
