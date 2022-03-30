@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/LidiaGaliano/coderhouselymonaportfolio#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.12"
   }
 }
